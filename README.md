@@ -1,6 +1,6 @@
 # 44643Sec04Team04Spring2024FinalProject
 
-**Fantasy Cricket League**
+##**Fantasy Cricket League**
 
 Fantasy Cricket League app is to provide a dynamic and engaging platform for cricket enthusiasts to create and manage their fantasy cricket teams.
 to develop app for live cricket score along with highlights of the match and helps to organize local cricket tournament. 
