@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		E1372E822B840A16004931BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E812B840A16004931BD /* AppDelegate.swift */; };
 		E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E832B840A16004931BD /* SceneDelegate.swift */; };
-		E1372E862B840A16004931BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E852B840A16004931BD /* ViewController.swift */; };
+		E1372E862B840A16004931BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E852B840A16004931BD /* LoginViewController.swift */; };
 		E1372E892B840A16004931BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1372E872B840A16004931BD /* Main.storyboard */; };
 		E1372E8B2B840A17004931BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1372E8A2B840A17004931BD /* Assets.xcassets */; };
 		E1372E8E2B840A17004931BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1372E8C2B840A17004931BD /* LaunchScreen.storyboard */; };
 		E1372E992B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E982B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectTests.swift */; };
 		E1372EA32B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA22B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift */; };
 		E1372EA52B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA42B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift */; };
+		E1372EB32B840B49004931BD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E1372EB22B840B49004931BD /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,7 @@
 		E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 44643Sec04Team04Spring2024FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1372E812B840A16004931BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1372E832B840A16004931BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1372E852B840A16004931BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1372E852B840A16004931BD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E1372E882B840A16004931BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E1372E8A2B840A17004931BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1372E8D2B840A17004931BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1372EB32B840B49004931BD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +103,7 @@
 			children = (
 				E1372E812B840A16004931BD /* AppDelegate.swift */,
 				E1372E832B840A16004931BD /* SceneDelegate.swift */,
-				E1372E852B840A16004931BD /* ViewController.swift */,
+				E1372E852B840A16004931BD /* LoginViewController.swift */,
 				E1372E872B840A16004931BD /* Main.storyboard */,
 				E1372E8A2B840A17004931BD /* Assets.xcassets */,
 				E1372E8C2B840A17004931BD /* LaunchScreen.storyboard */,
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = 44643Sec04Team04Spring2024FinalProject;
+			packageProductDependencies = (
+				E1372EB22B840B49004931BD /* Lottie */,
+			);
 			productName = 44643Sec04Team04Spring2024FinalProject;
 			productReference = E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = E1372E752B840A16004931BD;
+			packageReferences = (
+				E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = E1372E7F2B840A16004931BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,7 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1372E862B840A16004931BD /* ViewController.swift in Sources */,
+				E1372E862B840A16004931BD /* LoginViewController.swift in Sources */,
 				E1372E822B840A16004931BD /* AppDelegate.swift in Sources */,
 				E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */,
 			);
@@ -607,6 +615,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E1372EB22B840B49004931BD /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1372E762B840A16004931BD /* Project object */;
 }
