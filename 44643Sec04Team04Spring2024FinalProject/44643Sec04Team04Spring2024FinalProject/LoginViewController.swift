@@ -31,9 +31,9 @@ class LoginViewController: UIViewController {
         let animationgradveiw = AnimatedGradientView()
                 animationgradveiw .autoresizingMask = [ .flexibleHeight, .flexibleWidth ]
                 animationgradveiw .animationValues = [
-                    (colors: ["#2BC0E6", "#EAECC6"], .up, .axial),
+                    (colors: ["#FF9966", "#FF5E62"], .up, .axial),
                     
-                    (colors: ["#e876bb", "#E5E5BE"], .down, .axial),
+                    (colors: ["#FF5E62", "#FF9966"], .down, .axial),
                     
                 ]
                 animationgradveiw .direction = .down
