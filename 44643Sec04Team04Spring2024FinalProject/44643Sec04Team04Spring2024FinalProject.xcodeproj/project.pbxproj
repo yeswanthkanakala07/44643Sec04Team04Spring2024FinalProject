@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42163C092B89371D00DC137B /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 42163C082B89371D00DC137B /* AnimatedGradientView */; };
 		E1372E822B840A16004931BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E812B840A16004931BD /* AppDelegate.swift */; };
 		E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E832B840A16004931BD /* SceneDelegate.swift */; };
 		E1372E862B840A16004931BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E852B840A16004931BD /* LoginViewController.swift */; };
@@ -57,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42163C092B89371D00DC137B /* AnimatedGradientView in Frameworks */,
 				E1372EB32B840B49004931BD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,6 +149,7 @@
 			name = 44643Sec04Team04Spring2024FinalProject;
 			packageProductDependencies = (
 				E1372EB22B840B49004931BD /* Lottie */,
+				42163C082B89371D00DC137B /* AnimatedGradientView */,
 			);
 			productName = 44643Sec04Team04Spring2024FinalProject;
 			productReference = E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */;
@@ -222,6 +225,7 @@
 			mainGroup = E1372E752B840A16004931BD;
 			packageReferences = (
 				E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				42163C072B89371D00DC137B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 			);
 			productRefGroup = E1372E7F2B840A16004931BD /* Products */;
 			projectDirPath = "";
@@ -617,6 +621,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		42163C072B89371D00DC137B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.1;
+			};
+		};
 		E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -628,6 +640,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		42163C082B89371D00DC137B /* AnimatedGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42163C072B89371D00DC137B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			productName = AnimatedGradientView;
+		};
 		E1372EB22B840B49004931BD /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */;

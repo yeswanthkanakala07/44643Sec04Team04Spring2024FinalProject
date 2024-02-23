@@ -7,7 +7,7 @@
 
 import UIKit
 import Lottie
-
+import AnimatedGradientView
 class LoginViewController: UIViewController {
 
     @IBOutlet weak var LaunchLAV:LottieAnimationView!{
@@ -28,7 +28,18 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let animationgradveiw = AnimatedGradientView()
+                animationgradveiw .autoresizingMask = [ .flexibleHeight, .flexibleWidth ]
+                animationgradveiw .animationValues = [
+                    (colors: ["#2BC0E6", "#EAECC6"], .up, .axial),
+                    
+                    (colors: ["#e876bb", "#E5E5BE"], .down, .axial),
+                    
+                ]
+                animationgradveiw .direction = .down
+                animationgradveiw .frame = view.bounds
+                animationgradveiw.isUserInteractionEnabled = false
+                view.insertSubview( animationgradveiw, at : 0)        // Do any additional setup after loading the view.
     }
 
 
