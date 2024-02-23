@@ -19,3 +19,6 @@ My Tournaments:This Screen displays the tournaments the user has registered or h
 My Stats:The My Stats page displays all the player statics and overall performance of the user/player based on his activity and performance in the matches played which also include the runs scored, wickets taken, centuries etc. are showcased. These are based to unlock new achievements and goals which can be posted on social networks.
 Profile Page:On clicking the profile button, one can access his profile and edit the details accordingly. It also has the QR code which the player car share his/her profile. The edit button gives access to edit the profile information
 
+##**Login page**
+
+Added login page UI view, button,labels,field view elements, constraints, connections,gradient view, Lottie animation viewing resgister. view and some code.
