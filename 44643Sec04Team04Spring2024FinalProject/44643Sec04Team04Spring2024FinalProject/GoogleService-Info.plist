@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBU59A_NXvwfxY89d8uBiOHYMkSwAmrg20</string>
+	<key>GCM_SENDER_ID</key>
+	<string>221449763861</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>edu.nwmissouri.spring24.cs44643.sec04.-4643Sec04Team04Spring2024FinalProject</string>
+	<key>PROJECT_ID</key>
+	<string>cricketfantasyleaguesp24</string>
+	<key>STORAGE_BUCKET</key>
+	<string>cricketfantasyleaguesp24.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:221449763861:ios:d62efc9c46007c171c621c</string>
+</dict>
+</plist>
