@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -136,7 +136,7 @@
         <!--Register View Controller-->
         <scene sceneID="JOX-z7-6Xb">
             <objects>
-                <viewController id="fWO-Yq-fHS" userLabel="Register View Controller" customClass="LoginViewController" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fWO-Yq-fHS" userLabel="Register View Controller" customClass="RegisterViewController" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uKP-fI-qDe">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -183,6 +183,9 @@
                                                 <rect key="frame" x="0.0" y="78" width="373" height="70.333333333333314"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="SignUp"/>
+                                                <connections>
+                                                    <action selector="signup:" destination="fWO-Yq-fHS" eventType="touchUpInside" id="Id1-Bg-qF0"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjX-cq-7uB">
                                                 <rect key="frame" x="0.0" y="156.33333333333337" width="373" height="70"/>
@@ -205,6 +208,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="K9S-4B-xRX"/>
+                    <connections>
+                        <outlet property="emailTF" destination="WXg-41-e80" id="A2z-73-RzZ"/>
+                        <outlet property="passwordTF" destination="uEY-Iy-ChA" id="fTk-pV-djZ"/>
+                        <outlet property="reenterTF" destination="byH-fD-9er" id="0QE-uZ-axQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Be-wF-xZX" sceneMemberID="firstResponder"/>
             </objects>

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		42163C092B89371D00DC137B /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 42163C082B89371D00DC137B /* AnimatedGradientView */; };
+		42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */; };
 		E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124C1702B983387004EEB69 /* LoginViewController.swift */; };
 		E1372E822B840A16004931BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E812B840A16004931BD /* AppDelegate.swift */; };
 		E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E832B840A16004931BD /* SceneDelegate.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		E124C1702B983387004EEB69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 44643Sec04Team04Spring2024FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1372E812B840A16004931BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				E1372E812B840A16004931BD /* AppDelegate.swift */,
 				E1372E832B840A16004931BD /* SceneDelegate.swift */,
 				E1372E872B840A16004931BD /* Main.storyboard */,
+				42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */,
 				E1372E8A2B840A17004931BD /* Assets.xcassets */,
 				E1372E8C2B840A17004931BD /* LaunchScreen.storyboard */,
 				E1372E8F2B840A17004931BD /* Info.plist */,
@@ -273,6 +276,7 @@
 				E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */,
 				E1372E822B840A16004931BD /* AppDelegate.swift in Sources */,
 				E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */,
+				42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
