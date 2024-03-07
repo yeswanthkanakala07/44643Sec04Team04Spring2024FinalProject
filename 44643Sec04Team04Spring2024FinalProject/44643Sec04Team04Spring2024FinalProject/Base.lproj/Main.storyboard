@@ -56,6 +56,7 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="login"/>
                                                 <connections>
                                                     <action selector="LoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZ0-sG-0oH"/>
+                                                    <segue destination="7qJ-N1-fnt" kind="show" id="K1U-jz-qYd"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-X9-Il0">
@@ -185,7 +186,6 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="SignUp"/>
                                                 <connections>
                                                     <action selector="signup:" destination="fWO-Yq-fHS" eventType="touchUpInside" id="Id1-Bg-qF0"/>
-                                                    <segue destination="7qJ-N1-fnt" kind="show" id="ppZ-0A-EAs"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjX-cq-7uB">
@@ -217,7 +217,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Be-wF-xZX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1811" y="-1"/>
+            <point key="canvasLocation" x="2007" y="590"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qlw-ce-e8k">
@@ -251,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hj4-vu-wao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3688" y="565"/>
+            <point key="canvasLocation" x="3085" y="141"/>
         </scene>
         <!--Home-->
         <scene sceneID="Aij-6i-ysZ">
@@ -267,7 +267,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tns-9g-Naq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3659" y="-427"/>
+            <point key="canvasLocation" x="3086" y="-699"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="11m-WU-lZE">
@@ -286,7 +286,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wI8-CQ-QVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2714" y="-1"/>
+            <point key="canvasLocation" x="2008" y="-163"/>
         </scene>
     </scenes>
     <resources>
