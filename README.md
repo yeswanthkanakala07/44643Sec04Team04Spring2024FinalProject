@@ -23,3 +23,10 @@ Profile Page:On clicking the profile button, one can access his profile and edit
 ## **Login page**
 ---
 Added login page UI view, button,labels,field view elements, constraints, connections,gradient view, Lottie animation viewing resgister. view and some code.
+
+##  **Navigation controller**
+---
+* In the login page added navigation controller  from login page to sign up page. 
+* Added tab bar controller.
+* Created multiple MVCs. 
+* Integrated firebase.
