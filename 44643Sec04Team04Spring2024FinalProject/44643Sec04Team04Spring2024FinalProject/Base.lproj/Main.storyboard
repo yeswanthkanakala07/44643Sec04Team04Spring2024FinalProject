@@ -127,6 +127,7 @@
                     <connections>
                         <outlet property="LaunchLAV" destination="Gog-FZ-2fi" id="FJY-uh-XQ0"/>
                         <outlet property="emailTextField" destination="jBJ-py-pTu" id="3aW-mk-zzA"/>
+                        <outlet property="launchLAV" destination="Gog-FZ-2fi" id="2gK-nC-FNt"/>
                         <outlet property="passwordTextField" destination="r1C-C1-tG2" id="g7Y-YV-m7j"/>
                     </connections>
                 </viewController>

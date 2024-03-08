@@ -19,6 +19,8 @@
 		E1372EA32B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA22B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift */; };
 		E1372EA52B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA42B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift */; };
 		E178B4C42B9B7B9F008C234B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E178B4C32B9B7B9F008C234B /* FirebaseAuth */; };
+		E1DFD8682B9BACF100B5EE1B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E1DFD8672B9BACF100B5EE1B /* Lottie */; };
+		E1DFD86B2B9BAD0200B5EE1B /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				E178B4C42B9B7B9F008C234B /* FirebaseAuth in Frameworks */,
+				E1DFD8682B9BACF100B5EE1B /* Lottie in Frameworks */,
+				E1DFD86B2B9BAD0200B5EE1B /* AnimatedGradientView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +157,8 @@
 			name = 44643Sec04Team04Spring2024FinalProject;
 			packageProductDependencies = (
 				E178B4C32B9B7B9F008C234B /* FirebaseAuth */,
+				E1DFD8672B9BACF100B5EE1B /* Lottie */,
+				E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */,
 			);
 			productName = 44643Sec04Team04Spring2024FinalProject;
 			productReference = E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */;
@@ -227,9 +233,9 @@
 			);
 			mainGroup = E1372E752B840A16004931BD;
 			packageReferences = (
-				73B723A12B9B6FF9008D91D6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				73B723A32B9B70DB008D91D6 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 				E178B4C22B9B7B9F008C234B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 			);
 			productRefGroup = E1372E7F2B840A16004931BD /* Products */;
 			projectDirPath = "";
@@ -627,7 +633,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		73B723A12B9B6FF9008D91D6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		E178B4C22B9B7B9F008C234B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+		E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -635,20 +649,12 @@
 				minimumVersion = 4.4.1;
 			};
 		};
-		73B723A32B9B70DB008D91D6 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+		E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.1.1;
-			};
-		};
-		E178B4C22B9B7B9F008C234B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.22.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -658,6 +664,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = E178B4C22B9B7B9F008C234B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		E1DFD8672B9BACF100B5EE1B /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			productName = AnimatedGradientView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
