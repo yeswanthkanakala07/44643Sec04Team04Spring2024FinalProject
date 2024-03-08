@@ -15,12 +15,16 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var reenterTF: UITextField!
     
-    @IBAction func signup(_ sender: UIButton) {
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func signup(_ sender: UIButton) {
+        
     }
     
 
