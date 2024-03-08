@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class RegisterViewController: UIViewController {
 
@@ -24,7 +25,16 @@ class RegisterViewController: UIViewController {
     
     
     @IBAction func signup(_ sender: UIButton) {
-        
+        guard let email = emailTF.text else {return}
+        guard let password = passwordTF.text else {return}
+        Auth.auth().signIn(withEmail: email, password: password){ firebaseResult, error in
+            if let e = error{
+                print("error")
+            }
+            else{
+                self.performSegue(withIdentifier: "Home", sender: self)
+            }
+        }
     }
     
 
