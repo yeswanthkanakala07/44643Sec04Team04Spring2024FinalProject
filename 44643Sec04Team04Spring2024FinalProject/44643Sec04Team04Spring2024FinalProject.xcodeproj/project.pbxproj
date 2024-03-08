@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		42163C092B89371D00DC137B /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 42163C082B89371D00DC137B /* AnimatedGradientView */; };
 		42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */; };
 		E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124C1702B983387004EEB69 /* LoginViewController.swift */; };
 		E124C1732B98E3A9004EEB69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E124C1722B98E3A9004EEB69 /* GoogleService-Info.plist */; };
-		E124C1762B98E5C0004EEB69 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = E124C1752B98E5C0004EEB69 /* FirebaseAuth */; };
 		E1372E822B840A16004931BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E812B840A16004931BD /* AppDelegate.swift */; };
 		E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E832B840A16004931BD /* SceneDelegate.swift */; };
 		E1372E892B840A16004931BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1372E872B840A16004931BD /* Main.storyboard */; };
@@ -20,7 +18,6 @@
 		E1372E992B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E982B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectTests.swift */; };
 		E1372EA32B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA22B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift */; };
 		E1372EA52B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA42B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift */; };
-		E1372EB32B840B49004931BD /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E1372EB22B840B49004931BD /* Lottie */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,9 +60,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42163C092B89371D00DC137B /* AnimatedGradientView in Frameworks */,
-				E124C1762B98E5C0004EEB69 /* FirebaseAuth in Frameworks */,
-				E1372EB32B840B49004931BD /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,9 +150,6 @@
 			);
 			name = 44643Sec04Team04Spring2024FinalProject;
 			packageProductDependencies = (
-				E1372EB22B840B49004931BD /* Lottie */,
-				42163C082B89371D00DC137B /* AnimatedGradientView */,
-				E124C1752B98E5C0004EEB69 /* FirebaseAuth */,
 			);
 			productName = 44643Sec04Team04Spring2024FinalProject;
 			productReference = E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */;
@@ -233,9 +224,9 @@
 			);
 			mainGroup = E1372E752B840A16004931BD;
 			packageReferences = (
-				E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				42163C072B89371D00DC137B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
-				E124C1742B98E5C0004EEB69 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				73B723A12B9B6FF9008D91D6 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				73B723A32B9B70DB008D91D6 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
+				73B723A62B9B735A008D91D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = E1372E7F2B840A16004931BD /* Products */;
 			projectDirPath = "";
@@ -633,7 +624,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		42163C072B89371D00DC137B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+		73B723A12B9B6FF9008D91D6 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+		73B723A32B9B70DB008D91D6 /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
 			requirement = {
@@ -641,41 +640,15 @@
 				minimumVersion = 3.1.1;
 			};
 		};
-		E124C1742B98E5C0004EEB69 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		73B723A62B9B735A008D91D6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.22.0;
-			};
-		};
-		E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.4.0;
+				minimumVersion = 10.22.1;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		42163C082B89371D00DC137B /* AnimatedGradientView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 42163C072B89371D00DC137B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
-			productName = AnimatedGradientView;
-		};
-		E124C1752B98E5C0004EEB69 /* FirebaseAuth */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E124C1742B98E5C0004EEB69 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		E1372EB22B840B49004931BD /* Lottie */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E1372EB12B840B49004931BD /* XCRemoteSwiftPackageReference "lottie-ios" */;
-			productName = Lottie;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E1372E762B840A16004931BD /* Project object */;
 }
