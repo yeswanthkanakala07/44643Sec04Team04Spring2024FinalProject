@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -220,37 +221,21 @@
             </objects>
             <point key="canvasLocation" x="2007" y="590"/>
         </scene>
-        <!--Profile-->
+        <!--ProfileVC-->
         <scene sceneID="2yO-95-kdX">
             <objects>
-                <viewController id="6gB-Pn-k3F" sceneMemberID="viewController">
+                <viewController id="6gB-Pn-k3F" customClass="ProfileVC" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Ao-AL-Xep">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="dY5-GB-rm0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="UYk-jH-u6V"/>
+                    <navigationItem key="navigationItem" id="ml6-Dv-b50"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7rL-l2-TWM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3085" y="589"/>
-        </scene>
-        <!--My Stats-->
-        <scene sceneID="zT2-o6-i1U">
-            <objects>
-                <viewController id="gtI-BS-6hm" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Bhz-IE-qj0">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vhW-oa-X7D"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Stats" image="chart.bar.xaxis" catalog="system" id="u9x-GI-dPp"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lPX-M0-fyp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3085" y="-110"/>
+            <point key="canvasLocation" x="4011.450381679389" y="588.73239436619724"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qlw-ce-e8k">
@@ -270,49 +255,21 @@
             </objects>
             <point key="canvasLocation" x="20.610687022900763" y="-1.4084507042253522"/>
         </scene>
-        <!--My Tournments-->
-        <scene sceneID="T7C-ya-eYO">
-            <objects>
-                <viewController id="arg-6X-2Yn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CCp-7Y-sNw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="4HK-jc-A6M"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="My Tournments" image="cricket.ball" catalog="system" id="EjA-g0-afI"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hj4-vu-wao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3085" y="-799"/>
-        </scene>
-        <!--Home-->
+        <!--Home -->
         <scene sceneID="Aij-6i-ysZ">
             <objects>
-                <viewController id="B0V-2Y-wGS" sceneMemberID="viewController">
+                <viewController id="B0V-2Y-wGS" customClass="HomeVC" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GOy-lU-pus">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="WhatsApp Image 2024-03-08 at 9.40.55 AM" translatesAutoresizingMaskIntoConstraints="NO" id="gkN-Ae-Zxy">
-                                <rect key="frame" x="16" y="38" width="258" height="408"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7ot-Q6-XjY">
-                                <rect key="frame" x="287" y="160" width="106" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Ssd-5T-gVF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="gkN-Ae-Zxy" firstAttribute="top" secondItem="Ssd-5T-gVF" secondAttribute="top" constant="134" id="gCj-dh-AFC"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Bea-2c-ggJ"/>
+                    <navigationItem key="navigationItem" title="Home " largeTitleDisplayMode="always" id="A3C-ZQ-R7F"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tns-9g-Naq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3085" y="-1502"/>
+            <point key="canvasLocation" x="4011.450381679389" y="-1502.1126760563382"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="11m-WU-lZE">
@@ -325,24 +282,162 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="B0V-2Y-wGS" kind="relationship" relationship="viewControllers" id="QUL-vX-TsV"/>
-                        <segue destination="arg-6X-2Yn" kind="relationship" relationship="viewControllers" id="eFU-WK-6ye"/>
-                        <segue destination="gtI-BS-6hm" kind="relationship" relationship="viewControllers" id="LB6-V6-kJe"/>
-                        <segue destination="6gB-Pn-k3F" kind="relationship" relationship="viewControllers" id="o8n-fZ-Qlr"/>
+                        <segue destination="FG5-2O-0gE" kind="relationship" relationship="viewControllers" id="QUL-vX-TsV"/>
+                        <segue destination="k8g-pp-m7k" kind="relationship" relationship="viewControllers" id="eFU-WK-6ye"/>
+                        <segue destination="Npp-3T-xxx" kind="relationship" relationship="viewControllers" id="LB6-V6-kJe"/>
+                        <segue destination="7fT-bL-fzh" kind="relationship" relationship="viewControllers" id="o8n-fZ-Qlr"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wI8-CQ-QVR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2008" y="-163"/>
         </scene>
+        <!--Home-->
+        <scene sceneID="Dgn-vC-12s">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FG5-2O-0gE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="Bea-2c-ggJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="DNv-ki-F4g">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B0V-2Y-wGS" kind="relationship" relationship="rootViewController" id="8vI-tu-SqR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n0t-qI-YcT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3084.7328244274809" y="-1502.1126760563382"/>
+        </scene>
+        <!--My Tournments-->
+        <scene sceneID="TET-NW-Jwy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="k8g-pp-m7k" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Tournments" image="cricket.ball" catalog="system" id="EjA-g0-afI"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="ex6-os-nsc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="NvP-5y-hQv" kind="relationship" relationship="rootViewController" id="qy7-fO-Bjd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNR-zk-Lbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3084.7328244274809" y="-799.29577464788736"/>
+        </scene>
+        <!--My TournamentsVC Table View Controller-->
+        <scene sceneID="GVR-7B-LLM">
+            <objects>
+                <tableViewController id="NvP-5y-hQv" customClass="MyTournamentsVCTableViewController" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dkd-ZX-4Ve">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0Nr-MC-e8Y">
+                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Nr-MC-e8Y" id="D4p-O9-LbT">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="NvP-5y-hQv" id="OX6-5Z-4JM"/>
+                            <outlet property="delegate" destination="NvP-5y-hQv" id="NP1-S8-qbl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="5LO-DG-PxY"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hmw-rr-iue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3924" y="-802"/>
+        </scene>
+        <!--My Stats-->
+        <scene sceneID="CfI-Ex-DIu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Npp-3T-xxx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="My Stats" image="chart.bar.xaxis" catalog="system" id="u9x-GI-dPp"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AL0-IU-hSp">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lUm-D3-x6c" kind="relationship" relationship="rootViewController" id="70L-i6-ug1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Rt-yW-mqo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3084.7328244274809" y="-110.56338028169014"/>
+        </scene>
+        <!--My Stats Collection View Controller-->
+        <scene sceneID="RnJ-nx-iGW">
+            <objects>
+                <collectionViewController id="lUm-D3-x6c" customClass="MyStatsCollectionViewController" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ii9-w0-FbZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zhM-6N-FpZ">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="1ck-53-NhD">
+                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="gi5-Ur-B7k">
+                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionViewCellContentView>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="lUm-D3-x6c" id="VW0-GA-OkL"/>
+                            <outlet property="delegate" destination="lUm-D3-x6c" id="4CY-IR-8AR"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="t0T-oX-7fg"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GGc-Ae-OdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3973" y="-111"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="pGe-SU-S6o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="7fT-bL-fzh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="UYk-jH-u6V"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="S8u-1C-uOi">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6gB-Pn-k3F" kind="relationship" relationship="rootViewController" id="WR8-kl-2qF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yIN-qV-D2O" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3084.7328244274809" y="588.73239436619724"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="WhatsApp Image 2024-03-08 at 9.40.55 AM" width="938" height="936"/>
         <image name="chart.bar.xaxis" catalog="system" width="128" height="97"/>
         <image name="cricket.ball" catalog="system" width="128" height="123"/>
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="icons8-google-48" width="48" height="48"/>
-        <image name="magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="person" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
