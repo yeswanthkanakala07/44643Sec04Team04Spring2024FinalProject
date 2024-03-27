@@ -2,7 +2,7 @@
 //  MyTournamentsVC.swift
 //  44643Sec04Team04Spring2024FinalProject
 //
-//  Created by vani battu on 3/8/24.
+//  Created by Yaswanth Kanakala on 3/27/24.
 //
 
 import UIKit
@@ -15,7 +15,10 @@ class MyTournamentsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func CreateTournamentBTN(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "CreateTournament", sender: sender)
+    }
+    
     /*
     // MARK: - Navigation
 

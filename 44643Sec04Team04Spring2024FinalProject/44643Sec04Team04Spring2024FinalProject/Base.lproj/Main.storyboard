@@ -265,7 +265,9 @@
                         <viewLayoutGuide key="safeArea" id="Ssd-5T-gVF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home " largeTitleDisplayMode="always" id="A3C-ZQ-R7F"/>
+                    <navigationItem key="navigationItem" title="Home " largeTitleDisplayMode="always" id="A3C-ZQ-R7F">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="SFf-Is-BCk"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tns-9g-Naq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -323,41 +325,95 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="NvP-5y-hQv" kind="relationship" relationship="rootViewController" id="qy7-fO-Bjd"/>
+                        <segue destination="Nt5-jk-isW" kind="relationship" relationship="rootViewController" id="wJq-LS-PkX"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNR-zk-Lbu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3084.7328244274809" y="-799.29577464788736"/>
         </scene>
-        <!--My TournamentsVC Table View Controller-->
-        <scene sceneID="GVR-7B-LLM">
+        <!--My TournamentsVC-->
+        <scene sceneID="Xeb-ha-P1s">
             <objects>
-                <tableViewController id="NvP-5y-hQv" customClass="MyTournamentsVCTableViewController" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="dkd-ZX-4Ve">
+                <viewController id="Nt5-jk-isW" customClass="MyTournamentsVC" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="teP-MA-N00">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="67v-jy-I9S" userLabel="BigContainerSV">
+                                <rect key="frame" x="20" y="175" width="353" height="76.666666666666686"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Gb-st-gXr" userLabel="HostTournament">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="76.666666666666671"/>
+                                        <subviews>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-SH-bDy">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="35.333333333333336"/>
+                                                <segments>
+                                                    <segment title="My Matches"/>
+                                                    <segment title="My Tournaments"/>
+                                                    <segment title="My Teams"/>
+                                                </segments>
+                                            </segmentedControl>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-6l-9dc">
+                                                <rect key="frame" x="0.0" y="42.333333333333343" width="353" height="34.333333333333343"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Want to Host A Tournament ? Create one!" cornerStyle="capsule">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.80392156859999997" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </backgroundConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="CreateTournamentBTN:" destination="Nt5-jk-isW" eventType="touchUpInside" id="KfF-Nb-8Qd"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="gSu-SH-bDy" firstAttribute="height" secondItem="3Gb-st-gXr" secondAttribute="height" multiplier="0.493031" id="mTL-9i-3Db"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cfa-di-4dH">
+                                <rect key="frame" x="76" y="327" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8po-7q-hCJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="0Nr-MC-e8Y">
-                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Nr-MC-e8Y" id="D4p-O9-LbT">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="NvP-5y-hQv" id="OX6-5Z-4JM"/>
-                            <outlet property="delegate" destination="NvP-5y-hQv" id="NP1-S8-qbl"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" id="5LO-DG-PxY"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Hmw-rr-iue" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <constraints>
+                            <constraint firstItem="67v-jy-I9S" firstAttribute="top" secondItem="8po-7q-hCJ" secondAttribute="top" constant="20" id="9Yr-cs-m2t"/>
+                            <constraint firstItem="8po-7q-hCJ" firstAttribute="bottom" secondItem="67v-jy-I9S" secondAttribute="bottom" constant="20" id="Umo-Yy-m1I"/>
+                            <constraint firstItem="67v-jy-I9S" firstAttribute="leading" secondItem="8po-7q-hCJ" secondAttribute="leading" constant="20" id="Vz6-wr-M7f"/>
+                            <constraint firstAttribute="trailing" secondItem="67v-jy-I9S" secondAttribute="trailing" constant="20" id="ZYi-Zv-nEx"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="zXC-CY-6k1"/>
+                    <connections>
+                        <segue destination="g7h-vB-LfU" kind="show" identifier="CreateTournament" id="R0Z-Hw-XiM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eKS-Ms-Mj3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3924" y="-802"/>
+            <point key="canvasLocation" x="3972" y="-799"/>
+        </scene>
+        <!--Create a Tournament!-->
+        <scene sceneID="Uld-vW-77W">
+            <objects>
+                <viewController id="g7h-vB-LfU" customClass="CreateTournamentVC" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q5U-rc-GEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="anh-1c-0ow"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Create a Tournament!" id="YAT-mD-dLV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Prq-Ei-oWm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4796" y="-799"/>
         </scene>
         <!--My Stats-->
         <scene sceneID="CfI-Ex-DIu">

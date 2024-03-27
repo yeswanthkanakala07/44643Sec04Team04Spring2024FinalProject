@@ -20,9 +20,11 @@
 		E1372EA32B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA22B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift */; };
 		E1372EA52B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372EA42B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift */; };
 		E169760D2BB3CD5400BBD065 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169760C2BB3CD5400BBD065 /* HomeVC.swift */; };
-		E169760F2BB3CE9900BBD065 /* MyTournamentsVCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E169760E2BB3CE9900BBD065 /* MyTournamentsVCTableViewController.swift */; };
 		E16976112BB3CF1600BBD065 /* MyStatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16976102BB3CF1600BBD065 /* MyStatsCollectionViewController.swift */; };
 		E16976152BB3CFF600BBD065 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16976142BB3CFF600BBD065 /* ProfileVC.swift */; };
+		E19704FD2BB4D6090067D8F6 /* CreateTournamentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19704FC2BB4D6090067D8F6 /* CreateTournamentVC.swift */; };
+		E19705002BB4D62B0067D8F6 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = E19704FF2BB4D62B0067D8F6 /* Eureka */; };
+		E19705022BB4D87B0067D8F6 /* MyTournamentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19705012BB4D87B0067D8F6 /* MyTournamentsVC.swift */; };
 		E1DFD8682B9BACF100B5EE1B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E1DFD8672B9BACF100B5EE1B /* Lottie */; };
 		E1DFD86B2B9BAD0200B5EE1B /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */; };
 /* End PBXBuildFile section */
@@ -61,9 +63,10 @@
 		E1372EA22B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4643Sec04Team04Spring2024FinalProjectUITests.swift; sourceTree = "<group>"; };
 		E1372EA42B840A17004931BD /* _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _4643Sec04Team04Spring2024FinalProjectUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E169760C2BB3CD5400BBD065 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		E169760E2BB3CE9900BBD065 /* MyTournamentsVCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTournamentsVCTableViewController.swift; sourceTree = "<group>"; };
 		E16976102BB3CF1600BBD065 /* MyStatsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStatsCollectionViewController.swift; sourceTree = "<group>"; };
 		E16976142BB3CFF600BBD065 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		E19704FC2BB4D6090067D8F6 /* CreateTournamentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateTournamentVC.swift; sourceTree = "<group>"; };
+		E19705012BB4D87B0067D8F6 /* MyTournamentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTournamentsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +77,7 @@
 				E1DFD8682B9BACF100B5EE1B /* Lottie in Frameworks */,
 				424CB3712B9BB5640089ACFA /* FirebaseAuth in Frameworks */,
 				E1DFD86B2B9BAD0200B5EE1B /* AnimatedGradientView in Frameworks */,
+				E19705002BB4D62B0067D8F6 /* Eureka in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,9 +124,10 @@
 				E1372E812B840A16004931BD /* AppDelegate.swift */,
 				E1372E832B840A16004931BD /* SceneDelegate.swift */,
 				E1372E872B840A16004931BD /* Main.storyboard */,
+				E19705012BB4D87B0067D8F6 /* MyTournamentsVC.swift */,
+				E19704FC2BB4D6090067D8F6 /* CreateTournamentVC.swift */,
 				E16976102BB3CF1600BBD065 /* MyStatsCollectionViewController.swift */,
 				E16976142BB3CFF600BBD065 /* ProfileVC.swift */,
-				E169760E2BB3CE9900BBD065 /* MyTournamentsVCTableViewController.swift */,
 				E169760C2BB3CD5400BBD065 /* HomeVC.swift */,
 				42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */,
 				E1372E8A2B840A17004931BD /* Assets.xcassets */,
@@ -171,6 +176,7 @@
 				E1DFD8672B9BACF100B5EE1B /* Lottie */,
 				E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */,
 				424CB3702B9BB5640089ACFA /* FirebaseAuth */,
+				E19704FF2BB4D62B0067D8F6 /* Eureka */,
 			);
 			productName = 44643Sec04Team04Spring2024FinalProject;
 			productReference = E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */;
@@ -248,6 +254,7 @@
 				E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 				424CB36F2B9BB5640089ACFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				E19704FE2BB4D62B0067D8F6 /* XCRemoteSwiftPackageReference "Eureka" */,
 			);
 			productRefGroup = E1372E7F2B840A16004931BD /* Products */;
 			projectDirPath = "";
@@ -294,13 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */,
-				E169760F2BB3CE9900BBD065 /* MyTournamentsVCTableViewController.swift in Sources */,
 				E169760D2BB3CD5400BBD065 /* HomeVC.swift in Sources */,
 				E1372E822B840A16004931BD /* AppDelegate.swift in Sources */,
 				E16976152BB3CFF600BBD065 /* ProfileVC.swift in Sources */,
+				E19705022BB4D87B0067D8F6 /* MyTournamentsVC.swift in Sources */,
 				E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */,
 				E16976112BB3CF1600BBD065 /* MyStatsCollectionViewController.swift in Sources */,
 				42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */,
+				E19704FD2BB4D6090067D8F6 /* CreateTournamentVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,6 +665,14 @@
 				minimumVersion = 10.22.1;
 			};
 		};
+		E19704FE2BB4D62B0067D8F6 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.4.0;
+			};
+		};
 		E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -680,6 +696,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 424CB36F2B9BB5640089ACFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
+		};
+		E19704FF2BB4D62B0067D8F6 /* Eureka */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E19704FE2BB4D62B0067D8F6 /* XCRemoteSwiftPackageReference "Eureka" */;
+			productName = Eureka;
 		};
 		E1DFD8672B9BACF100B5EE1B /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
