@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -340,14 +340,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="67v-jy-I9S" userLabel="BigContainerSV">
-                                <rect key="frame" x="20" y="175" width="353" height="76.666666666666686"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="67v-jy-I9S" userLabel="BigContainerSV">
+                                <rect key="frame" x="20" y="175" width="353" height="574"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Gb-st-gXr" userLabel="HostTournament">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="76.666666666666671"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Gb-st-gXr" userLabel="HostTournament">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="80"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-SH-bDy">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="35.333333333333336"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="33"/>
                                                 <segments>
                                                     <segment title="My Matches"/>
                                                     <segment title="My Tournaments"/>
@@ -355,7 +355,7 @@
                                                 </segments>
                                             </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-6l-9dc">
-                                                <rect key="frame" x="0.0" y="42.333333333333343" width="353" height="34.333333333333343"/>
+                                                <rect key="frame" x="0.0" y="40" width="353" height="40"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button"/>
@@ -370,16 +370,25 @@
                                             </button>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="iGs-6l-9dc" firstAttribute="height" secondItem="3Gb-st-gXr" secondAttribute="height" multiplier="0.5" id="S2h-g2-BmG"/>
                                             <constraint firstItem="gSu-SH-bDy" firstAttribute="height" secondItem="3Gb-st-gXr" secondAttribute="height" multiplier="0.4" id="mTL-9i-3Db"/>
                                         </constraints>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K3o-AI-z65" userLabel="ScrollSV">
+                                        <rect key="frame" x="0.0" y="80" width="353" height="494"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0B-K9-I8i">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="494"/>
+                                                <viewLayoutGuide key="contentLayoutGuide" id="k4G-CW-NuV"/>
+                                                <viewLayoutGuide key="frameLayoutGuide" id="q8t-2d-4f8"/>
+                                            </scrollView>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="K3o-AI-z65" firstAttribute="height" secondItem="67v-jy-I9S" secondAttribute="height" id="8UJ-PR-GPc"/>
+                                </constraints>
                             </stackView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Cfa-di-4dH">
-                                <rect key="frame" x="76" y="327" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8po-7q-hCJ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
