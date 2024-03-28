@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		424CB3712B9BB5640089ACFA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 424CB3702B9BB5640089ACFA /* FirebaseAuth */; };
 		42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */; };
+		730FC21C2BB53925007695D3 /* Tournament view.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730FC21B2BB53925007695D3 /* Tournament view.xib */; };
 		E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124C1702B983387004EEB69 /* LoginViewController.swift */; };
 		E124C1732B98E3A9004EEB69 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E124C1722B98E3A9004EEB69 /* GoogleService-Info.plist */; };
 		E1372E822B840A16004931BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E812B840A16004931BD /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		730FC21B2BB53925007695D3 /* Tournament view.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Tournament view.xib"; sourceTree = "<group>"; };
 		E124C1702B983387004EEB69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E124C1722B98E3A9004EEB69 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 44643Sec04Team04Spring2024FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				E1372E812B840A16004931BD /* AppDelegate.swift */,
 				E1372E832B840A16004931BD /* SceneDelegate.swift */,
 				E1372E872B840A16004931BD /* Main.storyboard */,
+				730FC21B2BB53925007695D3 /* Tournament view.xib */,
 				E19705012BB4D87B0067D8F6 /* MyTournamentsVC.swift */,
 				E19704FC2BB4D6090067D8F6 /* CreateTournamentVC.swift */,
 				E16976102BB3CF1600BBD065 /* MyStatsCollectionViewController.swift */,
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				730FC21C2BB53925007695D3 /* Tournament view.xib in Resources */,
 				E1372E8E2B840A17004931BD /* LaunchScreen.storyboard in Resources */,
 				E124C1732B98E3A9004EEB69 /* GoogleService-Info.plist in Resources */,
 				E1372E8B2B840A17004931BD /* Assets.xcassets in Resources */,
