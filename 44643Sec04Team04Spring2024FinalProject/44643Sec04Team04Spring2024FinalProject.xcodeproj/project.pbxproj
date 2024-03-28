@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		424CB3712B9BB5640089ACFA /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 424CB3702B9BB5640089ACFA /* FirebaseAuth */; };
+		42BF89762BB5FC7C0017125F /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF89752BB5FC7C0017125F /* Eureka */; };
+		42BF89792BB5FCDA0017125F /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF89782BB5FCDA0017125F /* FirebaseAnalytics */; };
+		42BF897B2BB5FCDA0017125F /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF897A2BB5FCDA0017125F /* FirebaseAnalyticsSwift */; };
+		42BF897D2BB5FCDA0017125F /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF897C2BB5FCDA0017125F /* FirebaseAuth */; };
+		42BF897F2BB5FCDA0017125F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF897E2BB5FCDA0017125F /* FirebaseDatabase */; };
+		42BF89812BB5FCDA0017125F /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF89802BB5FCDA0017125F /* FirebaseFirestore */; };
+		42BF89832BB5FCDA0017125F /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF89822BB5FCDA0017125F /* FirebaseStorage */; };
+		42BF89862BB5FD0B0017125F /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF89852BB5FD0B0017125F /* Lottie */; };
+		42BF89892BB5FD230017125F /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 42BF89882BB5FD230017125F /* AnimatedGradientView */; };
 		42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */; };
 		730FC21C2BB53925007695D3 /* Tournament view.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730FC21B2BB53925007695D3 /* Tournament view.xib */; };
 		E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124C1702B983387004EEB69 /* LoginViewController.swift */; };
@@ -24,10 +32,7 @@
 		E16976112BB3CF1600BBD065 /* MyStatsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16976102BB3CF1600BBD065 /* MyStatsCollectionViewController.swift */; };
 		E16976152BB3CFF600BBD065 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E16976142BB3CFF600BBD065 /* ProfileVC.swift */; };
 		E19704FD2BB4D6090067D8F6 /* CreateTournamentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19704FC2BB4D6090067D8F6 /* CreateTournamentVC.swift */; };
-		E19705002BB4D62B0067D8F6 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = E19704FF2BB4D62B0067D8F6 /* Eureka */; };
 		E19705022BB4D87B0067D8F6 /* MyTournamentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19705012BB4D87B0067D8F6 /* MyTournamentsVC.swift */; };
-		E1DFD8682B9BACF100B5EE1B /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = E1DFD8672B9BACF100B5EE1B /* Lottie */; };
-		E1DFD86B2B9BAD0200B5EE1B /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +81,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1DFD8682B9BACF100B5EE1B /* Lottie in Frameworks */,
-				424CB3712B9BB5640089ACFA /* FirebaseAuth in Frameworks */,
-				E1DFD86B2B9BAD0200B5EE1B /* AnimatedGradientView in Frameworks */,
-				E19705002BB4D62B0067D8F6 /* Eureka in Frameworks */,
+				42BF897F2BB5FCDA0017125F /* FirebaseDatabase in Frameworks */,
+				42BF897B2BB5FCDA0017125F /* FirebaseAnalyticsSwift in Frameworks */,
+				42BF89892BB5FD230017125F /* AnimatedGradientView in Frameworks */,
+				42BF89792BB5FCDA0017125F /* FirebaseAnalytics in Frameworks */,
+				42BF89762BB5FC7C0017125F /* Eureka in Frameworks */,
+				42BF89832BB5FCDA0017125F /* FirebaseStorage in Frameworks */,
+				42BF897D2BB5FCDA0017125F /* FirebaseAuth in Frameworks */,
+				42BF89812BB5FCDA0017125F /* FirebaseFirestore in Frameworks */,
+				42BF89862BB5FD0B0017125F /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,10 +186,15 @@
 			);
 			name = 44643Sec04Team04Spring2024FinalProject;
 			packageProductDependencies = (
-				E1DFD8672B9BACF100B5EE1B /* Lottie */,
-				E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */,
-				424CB3702B9BB5640089ACFA /* FirebaseAuth */,
-				E19704FF2BB4D62B0067D8F6 /* Eureka */,
+				42BF89752BB5FC7C0017125F /* Eureka */,
+				42BF89782BB5FCDA0017125F /* FirebaseAnalytics */,
+				42BF897A2BB5FCDA0017125F /* FirebaseAnalyticsSwift */,
+				42BF897C2BB5FCDA0017125F /* FirebaseAuth */,
+				42BF897E2BB5FCDA0017125F /* FirebaseDatabase */,
+				42BF89802BB5FCDA0017125F /* FirebaseFirestore */,
+				42BF89822BB5FCDA0017125F /* FirebaseStorage */,
+				42BF89852BB5FD0B0017125F /* Lottie */,
+				42BF89882BB5FD230017125F /* AnimatedGradientView */,
 			);
 			productName = 44643Sec04Team04Spring2024FinalProject;
 			productReference = E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */;
@@ -199,6 +214,8 @@
 				E1372E962B840A17004931BD /* PBXTargetDependency */,
 			);
 			name = 44643Sec04Team04Spring2024FinalProjectTests;
+			packageProductDependencies = (
+			);
 			productName = 44643Sec04Team04Spring2024FinalProjectTests;
 			productReference = E1372E942B840A17004931BD /* 44643Sec04Team04Spring2024FinalProjectTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -254,10 +271,10 @@
 			);
 			mainGroup = E1372E752B840A16004931BD;
 			packageReferences = (
-				E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */,
-				E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
-				424CB36F2B9BB5640089ACFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				E19704FE2BB4D62B0067D8F6 /* XCRemoteSwiftPackageReference "Eureka" */,
+				42BF89742BB5FC7C0017125F /* XCRemoteSwiftPackageReference "Eureka" */,
+				42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				42BF89842BB5FD0B0017125F /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				42BF89872BB5FD230017125F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */,
 			);
 			productRefGroup = E1372E7F2B840A16004931BD /* Products */;
 			projectDirPath = "";
@@ -661,15 +678,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		424CB36F2B9BB5640089ACFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 10.22.1;
-			};
-		};
-		E19704FE2BB4D62B0067D8F6 /* XCRemoteSwiftPackageReference "Eureka" */ = {
+		42BF89742BB5FC7C0017125F /* XCRemoteSwiftPackageReference "Eureka" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/xmartlabs/Eureka.git";
 			requirement = {
@@ -677,7 +686,15 @@
 				minimumVersion = 5.4.0;
 			};
 		};
-		E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+		42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.23.1;
+			};
+		};
+		42BF89842BB5FD0B0017125F /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
 			requirement = {
@@ -685,7 +702,7 @@
 				minimumVersion = 4.4.1;
 			};
 		};
-		E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
+		42BF89872BB5FD230017125F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/rwbutler/AnimatedGradientView.git";
 			requirement = {
@@ -696,24 +713,49 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		424CB3702B9BB5640089ACFA /* FirebaseAuth */ = {
+		42BF89752BB5FC7C0017125F /* Eureka */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 424CB36F2B9BB5640089ACFA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAuth;
-		};
-		E19704FF2BB4D62B0067D8F6 /* Eureka */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = E19704FE2BB4D62B0067D8F6 /* XCRemoteSwiftPackageReference "Eureka" */;
+			package = 42BF89742BB5FC7C0017125F /* XCRemoteSwiftPackageReference "Eureka" */;
 			productName = Eureka;
 		};
-		E1DFD8672B9BACF100B5EE1B /* Lottie */ = {
+		42BF89782BB5FCDA0017125F /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E1DFD8662B9BACF100B5EE1B /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			package = 42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		42BF897A2BB5FCDA0017125F /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		42BF897C2BB5FCDA0017125F /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		42BF897E2BB5FCDA0017125F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		42BF89802BB5FCDA0017125F /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		42BF89822BB5FCDA0017125F /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF89772BB5FCDA0017125F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		42BF89852BB5FD0B0017125F /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 42BF89842BB5FD0B0017125F /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
 		};
-		E1DFD86A2B9BAD0200B5EE1B /* AnimatedGradientView */ = {
+		42BF89882BB5FD230017125F /* AnimatedGradientView */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = E1DFD8692B9BAD0200B5EE1B /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
+			package = 42BF89872BB5FD230017125F /* XCRemoteSwiftPackageReference "AnimatedGradientView" */;
 			productName = AnimatedGradientView;
 		};
 /* End XCSwiftPackageProductDependency section */

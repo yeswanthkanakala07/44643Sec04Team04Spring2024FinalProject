@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="zyh-07-Xuf">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -57,7 +57,6 @@
                                                 <buttonConfiguration key="configuration" style="filled" title="login"/>
                                                 <connections>
                                                     <action selector="LoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZ0-sG-0oH"/>
-                                                    <segue destination="7qJ-N1-fnt" kind="show" identifier="Home" id="K1U-jz-qYd"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-X9-Il0">
@@ -276,7 +275,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="11m-WU-lZE">
             <objects>
-                <tabBarController id="7qJ-N1-fnt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="HomeScreenTBC" id="7qJ-N1-fnt" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="fhv-bh-MuK"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gJO-7a-Nze">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
@@ -332,7 +331,7 @@
             </objects>
             <point key="canvasLocation" x="3084.7328244274809" y="-799.29577464788736"/>
         </scene>
-        <!--My TournamentsVC-->
+        <!--My Cricket-->
         <scene sceneID="Xeb-ha-P1s">
             <objects>
                 <viewController id="Nt5-jk-isW" customClass="MyTournamentsVC" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
@@ -343,11 +342,11 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="67v-jy-I9S" userLabel="BigContainerSV">
                                 <rect key="frame" x="20" y="175" width="353" height="574"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Gb-st-gXr" userLabel="HostTournament">
-                                        <rect key="frame" x="0.0" y="0.0" width="353" height="80"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3Gb-st-gXr" userLabel="HostTournament">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="122.66666666666667"/>
                                         <subviews>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="gSu-SH-bDy">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="33"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="58.333333333333336"/>
                                                 <segments>
                                                     <segment title="My Matches"/>
                                                     <segment title="My Tournaments"/>
@@ -355,7 +354,7 @@
                                                 </segments>
                                             </segmentedControl>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iGs-6l-9dc">
-                                                <rect key="frame" x="0.0" y="40" width="353" height="40"/>
+                                                <rect key="frame" x="0.0" y="65.333333333333343" width="353" height="57.333333333333343"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <state key="normal" title="Button"/>
@@ -369,16 +368,12 @@
                                                 </connections>
                                             </button>
                                         </subviews>
-                                        <constraints>
-                                            <constraint firstItem="iGs-6l-9dc" firstAttribute="height" secondItem="3Gb-st-gXr" secondAttribute="height" multiplier="0.5" id="S2h-g2-BmG"/>
-                                            <constraint firstItem="gSu-SH-bDy" firstAttribute="height" secondItem="3Gb-st-gXr" secondAttribute="height" multiplier="0.4" id="mTL-9i-3Db"/>
-                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="K3o-AI-z65" userLabel="ScrollSV">
-                                        <rect key="frame" x="0.0" y="80" width="353" height="494"/>
+                                        <rect key="frame" x="0.0" y="122.66666666666671" width="353" height="451.33333333333326"/>
                                         <subviews>
                                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v0B-K9-I8i">
-                                                <rect key="frame" x="0.0" y="0.0" width="353" height="494"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="451.33333333333331"/>
                                                 <viewLayoutGuide key="contentLayoutGuide" id="k4G-CW-NuV"/>
                                                 <viewLayoutGuide key="frameLayoutGuide" id="q8t-2d-4f8"/>
                                             </scrollView>
@@ -386,7 +381,8 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="K3o-AI-z65" firstAttribute="height" secondItem="67v-jy-I9S" secondAttribute="height" id="8UJ-PR-GPc"/>
+                                    <constraint firstItem="gSu-SH-bDy" firstAttribute="height" secondItem="67v-jy-I9S" secondAttribute="height" multiplier="0.1" id="Qpn-EZ-vt8"/>
+                                    <constraint firstItem="iGs-6l-9dc" firstAttribute="height" secondItem="67v-jy-I9S" secondAttribute="height" multiplier="0.1" id="mo0-BV-xFd"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -399,7 +395,7 @@
                             <constraint firstAttribute="trailing" secondItem="67v-jy-I9S" secondAttribute="trailing" constant="20" id="ZYi-Zv-nEx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="zXC-CY-6k1"/>
+                    <navigationItem key="navigationItem" title="My Cricket" id="zXC-CY-6k1"/>
                     <connections>
                         <segue destination="g7h-vB-LfU" kind="show" identifier="CreateTournament" id="R0Z-Hw-XiM"/>
                     </connections>
