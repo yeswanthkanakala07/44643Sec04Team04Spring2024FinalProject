@@ -20,6 +20,9 @@ class LoginViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    
     @IBAction func LoginClicked(_ sender: UIButton) {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
@@ -28,7 +31,10 @@ class LoginViewController: UIViewController {
                 print("error")
             }
             else{
-                self.performSegue(withIdentifier: "Home", sender: self)
+                AppDelegate.username = self.emailTextField.text!
+                let tabBarController = self.storyboard?.instantiateViewController(identifier: "HomeScreenTBC") as? UITabBarController
+                self.view.window?.rootViewController = tabBarController
+                self.view.window?.makeKeyAndVisible()
             }
         }
     }
