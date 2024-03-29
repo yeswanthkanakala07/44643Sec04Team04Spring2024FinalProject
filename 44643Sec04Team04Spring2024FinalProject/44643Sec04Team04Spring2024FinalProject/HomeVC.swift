@@ -10,43 +10,71 @@ import Social
 
 class HomeVC: UIViewController {
 
+    // Text view for user to input post content
+    let postTextView: UITextView = {
+        let textView = UITextView()
+        textView.translatesAutoresizingMaskIntoConstraints = false
+        textView.layer.borderWidth = 1
+        textView.layer.borderColor = UIColor.lightGray.cgColor
+        textView.layer.cornerRadius = 5
+        return textView
+    }()
+        
+        // Button to post content
+    let postButton: UIButton = {
+        let button = UIButton(type: .system)
+        button.setTitle("Post", for: .normal)
+        button.translatesAutoresizingMaskIntoConstraints = false
+        button.addTarget(self, action: #selector(postOnSocialMedia), for: .touchUpInside)
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .white
 
-        // Do any additional setup after loading the view.
-        let shareButton = UIButton(type: .system)
-        shareButton.setTitle("Share", for: .normal)
-        shareButton.addTarget(self, action: #selector(shareButtonTapped), for: .touchUpInside)
-        shareButton.frame = CGRect(x: 100, y: 100, width: 200, height: 50)
-        view.addSubview(shareButton)
+        // Add subviews
+        view.addSubview(postTextView)
+        view.addSubview(postButton)
+
+        // Constraints
+        NSLayoutConstraint.activate([
+            postTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            postTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            postTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            postTextView.heightAnchor.constraint(equalToConstant: 150),
+                
+            postButton.topAnchor.constraint(equalTo: postTextView.bottomAnchor, constant: 20),
+            postButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+        ])
     }
-    
-
-    @objc func shareButtonTapped() {
-        // Create an instance of the SLComposeViewController
-        let shareController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-        // Check if social service is available
+        
+    @objc func postOnSocialMedia() {
+        guard let postText = postTextView.text, !postText.isEmpty else {
+            // Show an alert if post text is empty
+            let alert = UIAlertController(title: "Empty Post", message: "Please enter some text to post.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            present(alert, animated: true, completion: nil)
+            return
+        }
+            
+            // Check if the user is allowed to post on Twitter
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
-            // Set default text for sharing
-            shareController?.setInitialText("Check out this cool app!")
-    
-            // Present share controller
-            present(shareController!, animated: true, completion: nil)
+            let composeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
+            composeViewController?.setInitialText(postText)
+                
+            // Present the compose view controller
+            if let viewController = composeViewController {
+                present(viewController, animated: true, completion: nil)
+            }
         } else {
-            // Show an alert if the social service is not available
-            let alert = UIAlertController(title: "Accounts", message: "Please log in to a Twitter account to share.", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-            self.present(alert, animated: true, completion: nil)
+            // Twitter is not available, display an alert
+            let alertController = UIAlertController(title: "Twitter Account", message: "Please sign in to your Twitter account in Settings.", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alertController.addAction(okAction)
+            present(alertController, animated: true, completion: nil)
         }
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

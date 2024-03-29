@@ -53,10 +53,14 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="132-TI-CEJ">
                                                 <rect key="frame" x="0.0" y="58.333333333333314" width="373" height="50.666666666666657"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="373" id="C3L-LE-ePb"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="login"/>
                                                 <connections>
                                                     <action selector="LoginClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lZ0-sG-0oH"/>
+                                                    <segue destination="7qJ-N1-fnt" kind="show" id="4t5-X4-JQ3"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dj1-X9-Il0">
