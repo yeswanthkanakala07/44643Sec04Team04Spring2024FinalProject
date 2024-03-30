@@ -30,3 +30,10 @@ Added login page UI view, button,labels,field view elements, constraints, connec
 * Added tab bar controller.
 * Created multiple MVCs. 
 * Integrated firebase.
+---
+## **My Tournament**
+* added custom view
+* My tournament screen vc
+* Created scroll view ,segment controls
+* Implemented create tournament with eureka
+---
