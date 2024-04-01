@@ -27,19 +27,15 @@ class LoginViewController: UIViewController {
         guard let email = emailTextField.text else {return}
         guard let password = passwordTextField.text else {return}
         Auth.auth().createUser(withEmail: email, password: password){ firebaseResult, error in
-            if let e = error{
-                print("error")
-            }
-            else{
-                AppDelegate.username = self.emailTextField.text!
-                let tabBarController = self.storyboard?.instantiateViewController(identifier: "HomeScreenTBC") as? UITabBarController
-                self.view.window?.rootViewController = tabBarController
-                self.view.window?.makeKeyAndVisible()
-            }
+            
+            AppDelegate.usr = self.emailTextField.text!
+            let tabBarController = self.storyboard?.instantiateViewController(identifier: "HomeScreenTBC") as? UITabBarController
+            self.view.window?.rootViewController = tabBarController
+            self.view.window?.makeKeyAndVisible()
+            
         }
+        
     }
-    
-    
     @IBOutlet weak var LaunchLAV: LottieAnimationView!{
         didSet{
             LaunchLAV.loopMode = .playOnce

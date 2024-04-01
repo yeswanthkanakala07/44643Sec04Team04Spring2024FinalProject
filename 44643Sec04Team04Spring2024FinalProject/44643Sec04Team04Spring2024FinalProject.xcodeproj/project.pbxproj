@@ -17,6 +17,8 @@
 		42302CAC2BBB411B000C8ED3 /* AnimatedGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 42302CAB2BBB411B000C8ED3 /* AnimatedGradientView */; };
 		42302CAF2BBB4143000C8ED3 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 42302CAE2BBB4143000C8ED3 /* Lottie */; };
 		42302CB22BBB414A000C8ED3 /* Eureka in Frameworks */ = {isa = PBXBuildFile; productRef = 42302CB12BBB414A000C8ED3 /* Eureka */; };
+		42302CB42BBB45D0000C8ED3 /* AuthenticationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42302CB32BBB45D0000C8ED3 /* AuthenticationModel.swift */; };
+		42302CB62BBB45EE000C8ED3 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42302CB52BBB45EE000C8ED3 /* Model.swift */; };
 		42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */; };
 		730FC21C2BB53925007695D3 /* Tournament view.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730FC21B2BB53925007695D3 /* Tournament view.xib */; };
 		738327C52BB7961300D8663F /* matchteamtournamentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738327C42BB7961300D8663F /* matchteamtournamentViewController.swift */; };
@@ -55,6 +57,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		42302CB32BBB45D0000C8ED3 /* AuthenticationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationModel.swift; sourceTree = "<group>"; };
+		42302CB52BBB45EE000C8ED3 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		730FC21B2BB53925007695D3 /* Tournament view.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Tournament view.xib"; sourceTree = "<group>"; };
 		738327C42BB7961300D8663F /* matchteamtournamentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchteamtournamentViewController.swift; sourceTree = "<group>"; };
@@ -148,10 +152,12 @@
 				E16976142BB3CFF600BBD065 /* ProfileVC.swift */,
 				E169760C2BB3CD5400BBD065 /* HomeVC.swift */,
 				42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */,
+				E124C1702B983387004EEB69 /* LoginViewController.swift */,
+				42302CB52BBB45EE000C8ED3 /* Model.swift */,
 				E1372E8A2B840A17004931BD /* Assets.xcassets */,
 				E1372E8C2B840A17004931BD /* LaunchScreen.storyboard */,
+				42302CB32BBB45D0000C8ED3 /* AuthenticationModel.swift */,
 				E1372E8F2B840A17004931BD /* Info.plist */,
-				E124C1702B983387004EEB69 /* LoginViewController.swift */,
 				E124C1722B98E3A9004EEB69 /* GoogleService-Info.plist */,
 			);
 			path = 44643Sec04Team04Spring2024FinalProject;
@@ -330,10 +336,12 @@
 				E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */,
 				E169760D2BB3CD5400BBD065 /* HomeVC.swift in Sources */,
 				E1372E822B840A16004931BD /* AppDelegate.swift in Sources */,
+				42302CB62BBB45EE000C8ED3 /* Model.swift in Sources */,
 				E16976152BB3CFF600BBD065 /* ProfileVC.swift in Sources */,
 				738327C52BB7961300D8663F /* matchteamtournamentViewController.swift in Sources */,
 				E19705022BB4D87B0067D8F6 /* MyTournamentsVC.swift in Sources */,
 				E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */,
+				42302CB42BBB45D0000C8ED3 /* AuthenticationModel.swift in Sources */,
 				E16976112BB3CF1600BBD065 /* MyStatsCollectionViewController.swift in Sources */,
 				42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */,
 				E19704FD2BB4D6090067D8F6 /* CreateTournamentVC.swift in Sources */,
