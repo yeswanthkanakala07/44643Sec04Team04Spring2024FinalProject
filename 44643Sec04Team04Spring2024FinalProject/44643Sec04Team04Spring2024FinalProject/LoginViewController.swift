@@ -8,6 +8,9 @@
 import UIKit
 import Firebase
 import Lottie
+import GoogleSignIn
+import GoogleSignInSwift
+
 
 
 class LoginViewController: UIViewController {
@@ -24,18 +27,19 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func LoginClicked(_ sender: UIButton) {
-        guard let email = emailTextField.text else {return}
-        guard let password = passwordTextField.text else {return}
-        Auth.auth().createUser(withEmail: email, password: password){ firebaseResult, error in
-            
-            AppDelegate.usr = self.emailTextField.text!
-            let tabBarController = self.storyboard?.instantiateViewController(identifier: "HomeScreenTBC") as? UITabBarController
-            self.view.window?.rootViewController = tabBarController
-            self.view.window?.makeKeyAndVisible()
-            
-        }
+        guard let email = emailTextField.text, !email.isEmpty else {return}
+        guard let password = passwordTextField.text, !password.isEmpty else {return}
         
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] authResult, error in
+            guard authResult?.user != nil else { return }
+            AppDelegate.usr = (authResult?.user.email)!
+            
+            let tabBarController = self?.storyboard?.instantiateViewController(identifier: "HomeScreenTBC") as? UITabBarController
+            self!.view.window?.rootViewController = tabBarController
+            self!.view.window?.makeKeyAndVisible()
+        }
     }
+    
     @IBOutlet weak var LaunchLAV: LottieAnimationView!{
         didSet{
             LaunchLAV.loopMode = .playOnce
@@ -51,7 +55,10 @@ class LoginViewController: UIViewController {
         }
     }
     
-    
+  
+    @IBAction func OnClickGoogleBTN(_ sender: UIButton) {
+        
+    }
     
     
 
