@@ -57,7 +57,17 @@ class LoginViewController: UIViewController {
     
   
     @IBAction func OnClickGoogleBTN(_ sender: UIButton) {
-        
+        Task {
+                let success = await AuthenticationManager.shared.signInwithGoogle()
+                if success {
+                    print("Sign in with Google successful")
+                    // Update UI or navigate to the next screen as needed
+                    
+                } else {
+                    print("Failed to sign in with Google")
+                    // Show error message to the user or handle the error appropriately
+                }
+            }
     }
     
     
