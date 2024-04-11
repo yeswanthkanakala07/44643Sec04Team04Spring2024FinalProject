@@ -60,9 +60,15 @@ class LoginViewController: UIViewController {
         Task {
                 let success = await AuthenticationManager.shared.signInwithGoogle()
                 if success {
-                    print("Sign in with Google successful")
-                    // Update UI or navigate to the next screen as needed
+                    DispatchQueue.main.async {
+                        print("Sign in with Google successful")
+                        let tabBarController = self.storyboard?.instantiateViewController(identifier: "HomeScreenTBC") as? UITabBarController
+                        self.view.window?.rootViewController = tabBarController
+                        self.view.window?.makeKeyAndVisible()
                     
+                        
+                    }
+                  
                 } else {
                     print("Failed to sign in with Google")
                     // Show error message to the user or handle the error appropriately
