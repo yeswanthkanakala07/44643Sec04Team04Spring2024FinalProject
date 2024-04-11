@@ -128,7 +128,7 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
                 else{
                     return
                 }
-        var tournament = Tournamnet(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: logo)
+        let tournament = Tournamnet(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: logo)
         Task {await self.createDoc(tournament: tournament)
             
         }

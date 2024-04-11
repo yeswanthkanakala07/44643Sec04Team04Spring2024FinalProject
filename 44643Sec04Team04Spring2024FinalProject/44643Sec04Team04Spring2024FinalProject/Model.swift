@@ -17,6 +17,10 @@ struct Tournamnet: Codable{
     var otherDetails : String?
     var logo : Data?
     
+    
+    
+    
+    
 }
 
 
