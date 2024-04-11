@@ -9,20 +9,6 @@ import UIKit
 import Eureka
 import FirebaseFirestore
 
-struct Tournamnet {
-    var name : String?
-    var city : String?
-    var ground : String?
-    var organizerName : String?
-    var OrganizerPhone : String?
-    var startDate : Date
-    var endDate : Date
-    var ballType : String
-    var pitchType : String
-    var matchType : String
-    var otherDetails : String?
-    var logo : UIImage?
-}
 
 
 class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
@@ -124,9 +110,39 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
         
     }
     
-    private func createTournament(){
+    private func createTournament() {
         var tournament_details = form.values()
-        
+                guard let name = tournament_details["name"] as? String,
+                      let city = tournament_details["city"] as? String,
+                      let ground = tournament_details["ground"] as? String,
+                      let organizerName = tournament_details["organizerName"] as? String,
+                      let OrganizerPhone = tournament_details["OrganizerPhone"] as? String,
+                      let startDate = tournament_details["startDate"] as? Date,
+                      let endDate = tournament_details["endDate"] as? Date,
+                        let ballType = tournament_details["ballType"] as? String,
+                        let pitchType = tournament_details["pitchType"] as? String,
+                        let matchType = tournament_details["matchType"] as? String,
+                      let otherDetails = tournament_details["otherDetails"] as? String,
+                        let logo = tournament_details["logo"] as? Data
+                        
+                else{
+                    return
+                }
+        var tournament = Tournamnet(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: logo)
+        Task {await self.createDoc(tournament: tournament)
+            
+        }
+    }
+    
+    private func createDoc(tournament: Tournamnet) async{
+        do{
+            try await db.collection("tournaments").addDocument(from: tournament)
+        }
+        catch {
+            print("-------------------------")
+            print(error.localizedDescription)
+            print("-------------------------")
+        }
     }
    
     

@@ -9,7 +9,7 @@ import UIKit
 
 private let reuseIdentifier = "Cell"
 
-class MyStatsCollectionViewController: UICollectionViewController {
+class MyStatsClctnVC: UICollectionViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

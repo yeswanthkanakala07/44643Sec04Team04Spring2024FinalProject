@@ -7,7 +7,7 @@
 
 import UIKit
 
-class matchteamtournamentViewController: UIViewController {
+class matchteamtournamentVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

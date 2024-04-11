@@ -445,10 +445,10 @@
             </objects>
             <point key="canvasLocation" x="3084.7328244274809" y="-110.56338028169014"/>
         </scene>
-        <!--My Stats Collection View Controller-->
+        <!--My Stats ClctnVC-->
         <scene sceneID="RnJ-nx-iGW">
             <objects>
-                <collectionViewController id="lUm-D3-x6c" customClass="MyStatsCollectionViewController" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="lUm-D3-x6c" customClass="MyStatsClctnVC" customModule="_4643Sec04Team04Spring2024FinalProject" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ii9-w0-FbZ">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
