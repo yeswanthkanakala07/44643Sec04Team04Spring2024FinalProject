@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileVC: UIViewController {
 
@@ -25,5 +26,25 @@ class ProfileVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    
+    
+    
+    @IBAction func signOut(_ sender: UIBarButtonItem) {
+        let firebaseAuth = Auth.auth()
+        do {
+          try firebaseAuth.signOut()
+            goToLoginScreen()
+        } catch let signOutError as NSError {
+          print("Error signing out: %@", signOutError)
+        }
+    }
+    
+    private func goToLoginScreen() {
+        
+        let homeController = self.storyboard?.instantiateViewController(identifier: "LoginScreen") as? UIViewController
+        self.view.window?.rootViewController = homeController
+        self.view.window?.makeKeyAndVisible()
+        }
+    
 }
