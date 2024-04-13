@@ -16,6 +16,7 @@
 		42CEE8EC2B98E191002BC9B3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */; };
 		730FC21C2BB53925007695D3 /* Tournament view.xib in Resources */ = {isa = PBXBuildFile; fileRef = 730FC21B2BB53925007695D3 /* Tournament view.xib */; };
 		738327C52BB7961300D8663F /* matchteamtournamentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 738327C42BB7961300D8663F /* matchteamtournamentVC.swift */; };
+		7DA226FC2BCA0B3B00139BB4 /* CricketAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DA226FB2BCA0B3B00139BB4 /* CricketAPIService.swift */; };
 		E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E124C1702B983387004EEB69 /* LoginViewController.swift */; };
 		E1372E822B840A16004931BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E812B840A16004931BD /* AppDelegate.swift */; };
 		E1372E842B840A16004931BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1372E832B840A16004931BD /* SceneDelegate.swift */; };
@@ -66,6 +67,7 @@
 		42CEE8EB2B98E191002BC9B3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		730FC21B2BB53925007695D3 /* Tournament view.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "Tournament view.xib"; sourceTree = "<group>"; };
 		738327C42BB7961300D8663F /* matchteamtournamentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = matchteamtournamentVC.swift; sourceTree = "<group>"; };
+		7DA226FB2BCA0B3B00139BB4 /* CricketAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CricketAPIService.swift; sourceTree = "<group>"; };
 		E124C1702B983387004EEB69 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		E1372E7E2B840A16004931BD /* 44643Sec04Team04Spring2024FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 44643Sec04Team04Spring2024FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1372E812B840A16004931BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				E1372E8C2B840A17004931BD /* LaunchScreen.storyboard */,
 				E1372E8F2B840A17004931BD /* Info.plist */,
 				E1BCD28A2BC5095800FC3640 /* GoogleService-Info.plist */,
+				7DA226FB2BCA0B3B00139BB4 /* CricketAPIService.swift */,
 			);
 			path = 44643Sec04Team04Spring2024FinalProject;
 			sourceTree = "<group>";
@@ -345,6 +348,7 @@
 			files = (
 				E124C1712B983387004EEB69 /* LoginViewController.swift in Sources */,
 				E169760D2BB3CD5400BBD065 /* HomeVC.swift in Sources */,
+				7DA226FC2BCA0B3B00139BB4 /* CricketAPIService.swift in Sources */,
 				E1372E822B840A16004931BD /* AppDelegate.swift in Sources */,
 				4294C57B2BC8503E001769A0 /* TournamentsDetailsVC.swift in Sources */,
 				42302CB62BBB45EE000C8ED3 /* Model.swift in Sources */,

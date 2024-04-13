@@ -8,6 +8,13 @@
 import UIKit
 import Social
 
+struct CricketScore:Decodable{
+    let CSK: String
+    let SRH: String
+    let RCB: String
+}
+
+
 class HomeVC: UIViewController {
 
   
