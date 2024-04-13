@@ -22,8 +22,8 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
         set_form()
         // Do any additional setup after loading the view.
     }
-   
- 
+    
+    
     private func set_form(){
         form +++ Section()
         <<< ButtonRow(){ row in
@@ -31,7 +31,7 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
             row.tag = "logo"
             row.onCellSelection{ cell , row in
                 self.uploadImage()
-                        
+                
             }
             
         }
@@ -100,67 +100,79 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
         
         
         +++ Section()
-                <<< ButtonRow(){ row in
-                    row.title = "Create"
-                    row.tag = "createBtn"
-                    row.onCellSelection{ cell , row in
-                        self.createTournament()
-                    }
+        <<< ButtonRow(){ row in
+            row.title = "Create"
+            row.tag = "createBtn"
+            row.onCellSelection{cell,row in 
+                Task {
+                    await self.createTournament()
                 }
+            }
+                
+        }
         
     }
     
-    private func createTournament() {
+    private func createTournament() async  {
         var tournament_details = form.values()
-                guard let name = tournament_details["name"] as? String,
-                      let city = tournament_details["city"] as? String,
-                      let ground = tournament_details["ground"] as? String,
-                      let organizerName = tournament_details["organizerName"] as? String,
-                      let OrganizerPhone = tournament_details["OrganizerPhone"] as? String,
-                      let startDate = tournament_details["startDate"] as? Date,
-                      let endDate = tournament_details["endDate"] as? Date,
-                        let ballType = tournament_details["ballType"] as? String,
-                        let pitchType = tournament_details["pitchType"] as? String,
-                        let matchType = tournament_details["matchType"] as? String,
-                      let otherDetails = tournament_details["otherDetails"] as? String,
-                        let logo = tournament_details["logo"] as? Data
-                        
-                else{
-                    return
-                }
-        let tournament = Tournamnet(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: logo)
-        Task {await self.createDoc(tournament: tournament)
-            
+        guard let name = tournament_details["name"] as? String,
+              let city = tournament_details["city"] as? String,
+              let ground = tournament_details["ground"] as? String,
+              let organizerName = tournament_details["organizerName"] as? String,
+              let OrganizerPhone = tournament_details["OrganizerPhone"] as? String,
+              let startDate = tournament_details["startDate"] as? Date,
+              let endDate = tournament_details["endDate"] as? Date,
+              let ballType = tournament_details["ballType"] as? String,
+              let pitchType = tournament_details["pitchType"] as? String,
+              let matchType = tournament_details["matchType"] as? String,
+              let otherDetails = tournament_details["otherDetails"] as? String
+              //let logo = tournament_details["logo"] as? String
+                
+        else{
+            return
         }
-    }
-    
-    private func createDoc(tournament: Tournamnet) async{
-        do{
-            try await db.collection("tournaments").addDocument(from: tournament)
-        }
-        catch {
-            print("-------------------------")
-            print(error.localizedDescription)
-            print("-------------------------")
-        }
-    }
-   
-    
-
-    private func uploadImage(){
-            let imagePicker = UIImagePickerController()
-            imagePicker.delegate = self
-            imagePicker.sourceType = .photoLibrary
-            present(imagePicker, animated: true)
-        }
+        let tournament = Tournament(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: "")
+       
+        await createDoc(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails)
         
-        func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
-            picker.dismiss(animated: true)
-            guard let userSelectedImage = info[.originalImage] as? UIImage else{return}
-            image = userSelectedImage
-            let alert = UIAlertController(title: "Image selected✅", message: "", preferredStyle: .alert)
-                    alert.addAction(UIAlertAction(title: "Okay", style: .default))
-                    self.present(alert, animated: true, completion: nil)
-            
+    }
+    
+    private func createDoc(name: String,city: String,ground: String,organizerName: String,OrganizerPhone: String, startDate: Date, endDate: Date, ballType: String, pitchType: String, matchType: String, otherDetails: String) async {
+        do{
+            try await db.collection("tournaments").addDocument(data: [
+                "OrganizerPhone" : OrganizerPhone,
+                "ballType" : ballType,
+                "city":city,
+                "endDate":endDate,
+                "ground":ground,
+//                "logo": logo,
+                "name":name,
+                "organizerName":organizerName,
+                "otherDetails":otherDetails,
+                "pitchType" : pitchType,
+                "startDate": startDate
+            ])
         }
+        catch{
+            print("")
+        }    }
+    
+    
+    
+    private func uploadImage(){
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.sourceType = .photoLibrary
+        present(imagePicker, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey: Any]) {
+        picker.dismiss(animated: true)
+        guard let userSelectedImage = info[.originalImage] as? UIImage else{return}
+        image = userSelectedImage
+        let alert = UIAlertController(title: "Image selected✅", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alert, animated: true, completion: nil)
+        
+    }
 }

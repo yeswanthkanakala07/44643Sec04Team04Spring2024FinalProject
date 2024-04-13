@@ -3,7 +3,7 @@ import Foundation
 import UIKit
 
 
-struct Tournamnet: Codable{
+struct Tournament: Codable{
     var name : String?
     var city : String?
     var ground : String?
@@ -15,7 +15,7 @@ struct Tournamnet: Codable{
     var pitchType : String
     var matchType : String
     var otherDetails : String?
-    var logo : Data?
+    var logo : String?
     
     
     
