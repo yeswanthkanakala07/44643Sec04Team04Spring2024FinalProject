@@ -10,8 +10,8 @@ import Social
 
 class HomeVC: UIViewController {
 
-    // Text view for user to input post content
-    let postTextView: UITextView = {
+  
+    let sharedTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.layer.borderWidth = 1
@@ -20,12 +20,11 @@ class HomeVC: UIViewController {
         return textView
     }()
         
-        // Button to post content
     let postButton: UIButton = {
         let button = UIButton(type: .system)
         button.setTitle("Post", for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false
-        button.addTarget(self, action: #selector(postOnSocialMedia), for: .touchUpInside)
+        button.addTarget(self, action: #selector(postOnMedia), for: .touchUpInside)
         return button
     }()
 
@@ -34,47 +33,53 @@ class HomeVC: UIViewController {
         
         view.backgroundColor = .white
 
-        // Add subviews
-        view.addSubview(postTextView)
+        
+        view.addSubview(sharedTextView)
         view.addSubview(postButton)
 
-        // Constraints
+        
         NSLayoutConstraint.activate([
-            postTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-            postTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-            postTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            postTextView.heightAnchor.constraint(equalToConstant: 150),
+            sharedTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
+            sharedTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
+            sharedTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
+            sharedTextView.heightAnchor.constraint(equalToConstant: 150),
                 
-            postButton.topAnchor.constraint(equalTo: postTextView.bottomAnchor, constant: 20),
+            postButton.topAnchor.constraint(equalTo: sharedTextView.bottomAnchor, constant: 20),
             postButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
         ])
     }
         
-    @objc func postOnSocialMedia() {
-        guard let postText = postTextView.text, !postText.isEmpty else {
-            // Show an alert if post text is empty
+    @objc func postOnMedia() {
+        guard let sharedText = sharedTextView.text, !sharedText.isEmpty else {
+            
             let alert = UIAlertController(title: "Empty Post", message: "Please enter some text to post.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
             present(alert, animated: true, completion: nil)
             return
         }
-            
-            // Check if the user is allowed to post on Twitter
+        
+        
         if SLComposeViewController.isAvailable(forServiceType: SLServiceTypeTwitter) {
             let composeViewController = SLComposeViewController(forServiceType: SLServiceTypeTwitter)
-            composeViewController?.setInitialText(postText)
-                
-            // Present the compose view controller
+            composeViewController?.setInitialText(sharedText)
+            
+            
             if let viewController = composeViewController {
                 present(viewController, animated: true, completion: nil)
             }
         } else {
-            // Twitter is not available, display an alert
-            let alertController = UIAlertController(title: "Twitter Account", message: "Please sign in to your Twitter account in Settings.", preferredStyle: .alert)
-            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(okAction)
+            let alertController = UIAlertController(title: "Twitter Account", message: "You are not signed in to Twitter. Would you like to sign in?", preferredStyle: .alert)
+            let signInAction = UIAlertAction(title: "Sign In", style: .default) { _ in
+               
+                if let twitterURL = URL(string: "App-Prefs:root=TWITTER") {
+                    UIApplication.shared.open(twitterURL, options: [:], completionHandler: nil)
+                }
+            }
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+            alertController.addAction(signInAction)
+            alertController.addAction(cancelAction)
             present(alertController, animated: true, completion: nil)
         }
     }
-    
+
 }
