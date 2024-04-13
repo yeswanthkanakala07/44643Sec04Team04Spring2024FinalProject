@@ -37,3 +37,8 @@ Added login page UI view, button,labels,field view elements, constraints, connec
 * Created scroll view ,segment controls
 * Implemented create tournament with eureka
 ---
+## **My  Home VC**
+* added sigin with google authorization
+* added profile VC layouts and connections
+* added sign out
+---
