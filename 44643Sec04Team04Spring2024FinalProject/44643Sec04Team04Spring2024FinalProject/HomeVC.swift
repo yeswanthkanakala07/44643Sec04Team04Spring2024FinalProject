@@ -7,14 +7,17 @@
 
 import UIKit
 import Social
+import WebKit
 struct CricketScore: Decodable {
        let CSK: String
        let SRH: String
        let RCB: String
    }
 
+
 class HomeVC: UIViewController {
     
+    @IBOutlet weak var web_View: WKWebView!
     let sharedTextView: UITextView = {
         let textView = UITextView()
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -36,17 +39,21 @@ class HomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = .white
+//        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "CricBackground") ?? nil).withAlphaComponent(0.5)
+//       
         
         view.addSubview(sharedTextView)
         view.addSubview(postButton)
-        
+        self.sharedTextView.text = "Post Something Here"
+        self.postButton.backgroundColor = UIColor.systemBlue
+        var configuration = UIButton.Configuration.filled()
+            postButton.configuration = configuration
+
         NSLayoutConstraint.activate([
             sharedTextView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
             sharedTextView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
             sharedTextView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-            sharedTextView.heightAnchor.constraint(equalToConstant: 150),
+            sharedTextView.heightAnchor.constraint(equalToConstant: 50),
             
             postButton.topAnchor.constraint(equalTo: sharedTextView.bottomAnchor, constant: 20),
             postButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -54,11 +61,19 @@ class HomeVC: UIViewController {
         
        
         postButton.addTarget(self, action: #selector(postOnMedia), for: .touchUpInside)
+        self.fectchCricketFeed()
         
-        
-        fetchCricketScores()
+//
     }
     
+    func fectchCricketFeed(){
+        if let url = URL(string: "https://news.google.com/search?cf=all&hl=en-IN&q=cricket&gl=IN&ceid=IN:en") {
+                   let request = URLRequest(url: url)
+                   web_View.load(request)
+               } else {
+                   print("Invalid URL")
+               }
+    }
     func fetchCricketScores() {
         cricketAPIService.fetchCricketScores { [weak self] cricketScores in
             guard let self = self, let cricketScores = cricketScores else {
@@ -117,7 +132,7 @@ class HomeVC: UIViewController {
                 let alertController = UIAlertController(title: "Twitter Account", message: "You are not signed in to Twitter. Would you like to sign in?", preferredStyle: .alert)
                 let signInAction = UIAlertAction(title: "Sign In", style: .default) { _ in
                    
-                    if let twitterURL = URL(string: "App-Prefs:root=TWITTER") {
+                    if let twitterURL = URL(string: "https://twitter.com") {
                         UIApplication.shared.open(twitterURL, options: [:], completionHandler: nil)
                     }
                 }
@@ -128,3 +143,4 @@ class HomeVC: UIViewController {
             }
     }
 }
+

@@ -120,8 +120,8 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
               let ground = tournament_details["ground"] as? String,
               let organizerName = tournament_details["organizerName"] as? String,
               let OrganizerPhone = tournament_details["OrganizerPhone"] as? String,
-              let startDate = tournament_details["startDate"] as? Date,
-              let endDate = tournament_details["endDate"] as? Date,
+              let startDate = tournament_details["startDate"],
+              let endDate = tournament_details["endDate"],
               let ballType = tournament_details["ballType"] as? String,
               let pitchType = tournament_details["pitchType"] as? String,
               let matchType = tournament_details["matchType"] as? String,
@@ -131,9 +131,9 @@ class CreateTournamentVC: FormViewController, UIImagePickerControllerDelegate, U
         else{
             return
         }
-        let tournament = Tournament(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: "")
+        let tournament = Tournament(name: name,city: city,ground: ground,organizerName: organizerName,organizerPhone: OrganizerPhone, startDate: startDate as! Timestamp, endDate: endDate as! Timestamp, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails,logo: "")
        
-        await createDoc(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate, endDate: endDate, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails)
+        await createDoc(name: name,city: city,ground: ground,organizerName: organizerName,OrganizerPhone: OrganizerPhone, startDate: startDate as! Date, endDate: endDate as! Date, ballType: ballType, pitchType: pitchType, matchType: matchType, otherDetails: otherDetails)
         
     }
     

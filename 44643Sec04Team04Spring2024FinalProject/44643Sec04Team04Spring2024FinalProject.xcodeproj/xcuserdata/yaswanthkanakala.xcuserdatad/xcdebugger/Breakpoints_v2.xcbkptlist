@@ -34,120 +34,148 @@
             endingLineNumber = "141"
             landmarkName = "createDoc(name:city:ground:organizerName:OrganizerPhone:startDate:endDate:ballType:pitchType:matchType:otherDetails:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "936CCF5F-6173-43C4-AA49-C155A2227B83"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "showMenu()"
+            landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - ccacefe8a16ba6cd"
+                  uuid = "936CCF5F-6173-43C4-AA49-C155A2227B83 - fcde98e2699afa39"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String, logo: Swift.String) async -&gt; ()"
+                  symbolName = "closure #1 (_4643Sec04Team04Spring2024FinalProject.Tournament) -&gt; () in _4643Sec04Team04Spring2024FinalProject.MyTournamentsVC.showMenu() -&gt; ()"
                   moduleName = "44643Sec04Team04Spring2024FinalProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
+                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53">
                </Location>
                <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - 7bef947b8889a050"
+                  uuid = "936CCF5F-6173-43C4-AA49-C155A2227B83 - f816ff651ce49b17"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String, logo: Swift.String) async -&gt; ()"
+                  symbolName = "_4643Sec04Team04Spring2024FinalProject.MyTournamentsVC.showMenu() -&gt; ()"
                   moduleName = "44643Sec04Team04Spring2024FinalProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
+                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
-               </Location>
-               <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - 9f121651eed42ec1"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String, logo: Swift.String) async -&gt; ()"
-                  moduleName = "44643Sec04Team04Spring2024FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
-               </Location>
-               <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - 47cb1a7690ff6ac7"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String, logo: Swift.String) async -&gt; ()"
-                  moduleName = "44643Sec04Team04Spring2024FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
-               </Location>
-               <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - 6d3a3e8c0333e447"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String) async -&gt; ()"
-                  moduleName = "44643Sec04Team04Spring2024FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
-               </Location>
-               <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - efce520ab287a619"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(2) await resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String) async -&gt; ()"
-                  moduleName = "44643Sec04Team04Spring2024FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
-               </Location>
-               <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - a531ec7639150045"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String) async -&gt; ()"
-                  moduleName = "44643Sec04Team04Spring2024FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
-               </Location>
-               <Location
-                  uuid = "ADAFCF8F-1162-4B05-8876-9404963C0FC7 - 412b735b5469be44"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(4) suspend resume partial function for _4643Sec04Team04Spring2024FinalProject.CreateTournamentVC.createDoc(name: Swift.String, city: Swift.String, ground: Swift.String, organizerName: Swift.String, OrganizerPhone: Swift.String, startDate: Foundation.Date, endDate: Foundation.Date, ballType: Swift.String, pitchType: Swift.String, matchType: Swift.String, otherDetails: Swift.String) async -&gt; ()"
-                  moduleName = "44643Sec04Team04Spring2024FinalProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/yaswanthkanakala/Documents/GitHub/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/44643Sec04Team04Spring2024FinalProject/CreateTournamentVC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "142"
-                  endingLineNumber = "142">
+                  startingLineNumber = "53"
+                  endingLineNumber = "53">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32E01045-99F2-4167-B5B8-66858FBBC1C1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "fetchTournaments()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2B3CBE8B-08EC-4F4A-9C12-DBC2595246E6"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
+            landmarkName = "fetchTournaments()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "615E26C8-8AFD-461C-8594-829709BD2140"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "fetchTournaments()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "539283FF-705E-4B01-B85A-2C339657ED10"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "109"
+            endingLineNumber = "109"
+            landmarkName = "fetchTournaments()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D3D35493-EBBF-452F-9F6C-1C2DF7A4C091"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "fetchTournaments()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A259E069-57CA-4D31-9747-92BBF900279C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "44643Sec04Team04Spring2024FinalProject/MyTournamentsVC.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "fetchTournaments()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

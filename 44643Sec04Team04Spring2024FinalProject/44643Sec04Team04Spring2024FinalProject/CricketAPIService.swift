@@ -11,9 +11,55 @@ import Foundation
 
 class CricketAPIService: UIViewController {
 
+    let apiUrl = "https://api.sportmonks.com/football/v3/fixtures"
+
+    // Example API key
+    let apiKey = "O2HujajdzoV2Y1uWWwboC4XjRru3BEGQbu3zWZ6QTyM6DBZXJNQCsFaReoPM"
+
+    // Define a typealias for the completion handler
+    typealias CricketScoresCompletion = (Result<[String: String], Error>) -> Void
+
+    func fetchCricketScores(completion: @escaping CricketScoresCompletion) {
+        guard let url = URL(string: apiUrl) else {
+            completion(.failure(NSError(domain: "InvalidURL", code: 0, userInfo: nil)))
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        request.setValue(apiKey, forHTTPHeaderField: "Authorization")
+        
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            if let error = error {
+                completion(.failure(error))
+                return
+            }
+            
+            guard let httpResponse = response as? HTTPURLResponse,
+                  (200...299).contains(httpResponse.statusCode) else {
+                completion(.failure(NSError(domain: "InvalidResponse", code: 0, userInfo: nil)))
+                return
+            }
+            
+            if let data = data {
+                do {
+                    // Parse the JSON response
+                    let decoder = JSONDecoder()
+                    let scores = try decoder.decode([String: String].self, from: data)
+                    completion(.success(scores))
+                    
+                    // Handle the scores data (update UI, etc.)
+                } catch {
+                    completion(.failure(error))
+                }
+            }
+        }
+        
+        task.resume()
+    }
+    
     func fetchCricketScores(completion: @escaping ([CricketScore]?) -> Void) {
            
-            let Url = URL(string: "https://api.example.com/cricket/scores")!
+            let Url = URL(string: "https://api.sportmonks.com/v3/cricket/fixture")!
             
             
             let ses = URLSession.shared

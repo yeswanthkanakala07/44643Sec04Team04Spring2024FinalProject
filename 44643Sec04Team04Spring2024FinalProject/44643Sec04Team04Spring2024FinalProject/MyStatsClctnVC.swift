@@ -7,82 +7,91 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
+struct ApiResponse: Codable {
+    let data: [Fixture]
+}
+
+struct Fixture: Codable {
+    let id: Int
+    let name: String
+    let statistics: [Statistic]?
+
+    enum CodingKeys: String, CodingKey {
+        case id, name, statistics
+    }
+}
+
+struct Statistic: Codable {
+    let id: Int
+    let fixtureId: Int
+    let participantId: Int
+    let value: Int
+    let location: String
+
+    enum CodingKeys: String, CodingKey {
+        case id, location, value
+        case fixtureId = "fixture_id"
+        case participantId = "participant_id"
+    }
+}
 
 class MyStatsClctnVC: UICollectionViewController {
+    private var statistics = [Statistic]() // This will hold all statistics
+    private let reuseIdentifier = "StatCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
-
-        // Do any additional setup after loading the view.
+        fetchPlayerStatistics()
     }
 
-    /*
-    // MARK: - Navigation
+    func fetchPlayerStatistics() {
+        let urlString = "https://api.sportmonks.com/v3/football/fixtures?api_token=uouy8GwevHmCvfsqpdORyBvljVWQeRIIXV6qhyY9aGwJfAcaYfzvnkZcvSCx&include=statistics"
+        guard let url = URL(string: urlString) else {
+            print("Invalid URL")
+            return
+        }
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using [segue destinationViewController].
-        // Pass the selected object to the new view controller.
+        let task = URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
+            guard let data = data, error == nil else {
+                print("Error fetching data: \(error?.localizedDescription ?? "Unknown error")")
+                return
+            }
+
+            do {
+                let apiResponse = try JSONDecoder().decode(ApiResponse.self, from: data)
+                DispatchQueue.main.async {
+                    self?.statistics = apiResponse.data.flatMap { $0.statistics ?? [] }
+                    self?.collectionView.reloadData()
+                }
+            } catch {
+                print("Failed to decode JSON: \(error)")
+            }
+        }
+        task.resume()
     }
-    */
 
     // MARK: UICollectionViewDataSource
-
-    override func numberOfSections(in collectionView: UICollectionView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return statistics.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
-    
-        // Configure the cell
-    
+        configure(cell: cell, forItemAt: indexPath)
         return cell
     }
 
-    // MARK: UICollectionViewDelegate
+    func configure(cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
+        let stat = statistics[indexPath.row]
+        cell.backgroundColor = .lightGray // Example setup
+        cell.layer.cornerRadius = 10
+        cell.layer.masksToBounds = true
 
-    /*
-    // Uncomment this method to specify if the specified item should be highlighted during tracking
-    override func collectionView(_ collectionView: UICollectionView, shouldHighlightItemAt indexPath: IndexPath) -> Bool {
-        return true
+        // Adding label to cell (for demonstration)
+        let label = UILabel(frame: cell.contentView.bounds)
+        label.text = "Fixture ID: \(stat.fixtureId), Stat ID: \(stat.id), Value: \(stat.value)"
+        label.textAlignment = .center
+        cell.contentView.addSubview(label)
     }
-    */
-
-    /*
-    // Uncomment this method to specify if the specified item should be selected
-    override func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
-        return true
-    }
-    */
-
-    /*
-    // Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-    override func collectionView(_ collectionView: UICollectionView, shouldShowMenuForItemAt indexPath: IndexPath) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, canPerformAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) -> Bool {
-        return false
-    }
-
-    override func collectionView(_ collectionView: UICollectionView, performAction action: Selector, forItemAt indexPath: IndexPath, withSender sender: Any?) {
-    
-    }
-    */
-
 }
