@@ -1,0 +1,193 @@
+2024-04-20 02:17:40 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x3dd6974d0; archive(resolved)="<IDEArchive: 0x6000c219cfc0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	Chain (16, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x3dd6974d0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x3dd6cea80; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x59bc1c500; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x511241e20; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x511257d50; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x51125aeb0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x34a2e0ad0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x51124ced0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x58823af20; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600005ce9f80; teamID='Z8YFT375S3', teamName='Codeit Softwares Limited', teamType='Company', username='piyush11433@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x37ec8c500; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="(null)">
+	<IDEDistributionContext: 0x34a2f59c0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="(null)">
+	<IDEDistributionContext: 0x59bc24a50; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="(null)">
+	<IDEDistributionContext: 0x5112623c0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60009c6c38d0>", team="(null)">
+	<IDEDistributionContext: 0x58822c5e0; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x3dd6dc530; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="(null)", team="(null)">
+	<IDEDistributionContext: 0x12675f770; archive = "<IDEArchive: 0x6000c219cfc0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x3dd6974d0>
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCreateDestRootStep
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCopyItemStep
+2024-04-20 02:17:40 +0000  Running /usr/bin/ditto '-V' '/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app' '/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root/Payload/Scribble.app'
+2024-04-20 02:17:40 +0000  >>> Copying /Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app 
+2024-04-20 02:17:40 +0000  copying file ./_CodeSignature/CodeResources ... 
+2024-04-20 02:17:40 +0000  7079 bytes for ./_CodeSignature/CodeResources
+2024-04-20 02:17:40 +0000  copying file ./Scribble ... 
+2024-04-20 02:17:40 +0000  2340144 bytes for ./Scribble
+2024-04-20 02:17:40 +0000  copying file ./GoogleService-Info.plist ... 
+2024-04-20 02:17:40 +0000  472 bytes for ./GoogleService-Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/GameViewController.nib ... 
+2024-04-20 02:17:40 +0000  1158 bytes for ./Base.lproj/Main.storyboardc/GameViewController.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/GameOverViewController.nib ... 
+2024-04-20 02:17:40 +0000  1447 bytes for ./Base.lproj/Main.storyboardc/GameOverViewController.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/P23-tE-j8Y-view-8tg-fw-onl.nib ... 
+2024-04-20 02:17:40 +0000  2431 bytes for ./Base.lproj/Main.storyboardc/P23-tE-j8Y-view-8tg-fw-onl.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/A1U-ap-dhM-view-BDg-hB-8ps.nib ... 
+2024-04-20 02:17:40 +0000  8088 bytes for ./Base.lproj/Main.storyboardc/A1U-ap-dhM-view-BDg-hB-8ps.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/NavigationHome.nib ... 
+2024-04-20 02:17:40 +0000  2295 bytes for ./Base.lproj/Main.storyboardc/NavigationHome.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/SplashVC.nib ... 
+2024-04-20 02:17:40 +0000  1137 bytes for ./Base.lproj/Main.storyboardc/SplashVC.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/b4J-6O-A52-view-jbt-lh-fB5.nib ... 
+2024-04-20 02:17:40 +0000  7058 bytes for ./Base.lproj/Main.storyboardc/b4J-6O-A52-view-jbt-lh-fB5.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/MenuViewController.nib ... 
+2024-04-20 02:17:40 +0000  1576 bytes for ./Base.lproj/Main.storyboardc/MenuViewController.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/ZXG-VX-XGh-view-0Sp-Q2-2Em.nib ... 
+2024-04-20 02:17:40 +0000  14728 bytes for ./Base.lproj/Main.storyboardc/ZXG-VX-XGh-view-0Sp-Q2-2Em.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/Main.storyboardc/Info.plist ... 
+2024-04-20 02:17:40 +0000  381 bytes for ./Base.lproj/Main.storyboardc/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2024-04-20 02:17:40 +0000  1225 bytes for ./Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2024-04-20 02:17:40 +0000  924 bytes for ./Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+2024-04-20 02:17:40 +0000  copying file ./Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2024-04-20 02:17:40 +0000  258 bytes for ./Base.lproj/LaunchScreen.storyboardc/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Animation.json ... 
+2024-04-20 02:17:40 +0000  127345 bytes for ./Animation.json
+2024-04-20 02:17:40 +0000  copying file ./Lottie_Lottie.bundle/PrivacyInfo.xcprivacy ... 
+2024-04-20 02:17:40 +0000  599 bytes for ./Lottie_Lottie.bundle/PrivacyInfo.xcprivacy
+2024-04-20 02:17:40 +0000  copying file ./Lottie_Lottie.bundle/Info.plist ... 
+2024-04-20 02:17:40 +0000  671 bytes for ./Lottie_Lottie.bundle/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Assets.car ... 
+2024-04-20 02:17:40 +0000  504207 bytes for ./Assets.car
+2024-04-20 02:17:40 +0000  copying file ./embedded.mobileprovision ... 
+2024-04-20 02:17:40 +0000  30781 bytes for ./embedded.mobileprovision
+2024-04-20 02:17:40 +0000  copying file ./Info.plist ... 
+2024-04-20 02:17:40 +0000  1512 bytes for ./Info.plist
+2024-04-20 02:17:40 +0000  copying file ./PkgInfo ... 
+2024-04-20 02:17:40 +0000  8 bytes for ./PkgInfo
+2024-04-20 02:17:40 +0000  /usr/bin/ditto exited with 0
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionEmbedProfileStep
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionInfoPlistStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionSymbolsStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionAppThinningStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionArchThinningStep
+2024-04-20 02:17:40 +0000  Item /Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app doesn't have the entitlement com.apple.developer.web-browser-engine.host enabled, returning ["arm64e"]
+2024-04-20 02:17:40 +0000  Archs to thin for item /Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app are ["arm64e"]
+2024-04-20 02:17:40 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root/Payload/Scribble.app/Scribble' '-verify_arch' 'arm64e'
+2024-04-20 02:17:40 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2024-04-20 02:17:40 +0000  Skipping architecture thinning for item "Scribble" because arch "arm64e" wasn't found
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionODRStep
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionStripXattrsStep
+2024-04-20 02:17:40 +0000  Skipping stripping extended attributes because the codesign step will strip them.
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCodesignStep
+2024-04-20 02:17:40 +0000  Entitlements for <IDEDistributionItem: 0x60008a1f9e60; bundleID='com.onestop.GiveAway', path='<DVTFilePath:0x600062bced80:'/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000d6743ac0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60006be80c00; name='Apple Development: Piyush Kumar (F849A2YH44)', hash='878F45F8A82525E54B8F86BEFC8CE26701CF4721', serialNumber='2BB2B7D393183DEB04DF121EC6D6BCA4', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-04-03 02:57:08 +0000''>', entitlements='{
+    "application-identifier" = "Z8YFT375S3.com.onestop.GiveAway";
+    "com.apple.developer.game-center" = 1;
+    "com.apple.developer.team-identifier" = Z8YFT375S3;
+    "get-task-allow" = 1;
+}', teamID='Z8YFT375S3', identifier='com.onestop.GiveAway', executablePath='<DVTFilePath:0x600062bcfa80:'/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app/Scribble'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "Z8YFT375S3.com.onestop.GiveAway";
+    "com.apple.developer.game-center" = 1;
+    "com.apple.developer.team-identifier" = Z8YFT375S3;
+    "get-task-allow" = 1;
+}
+2024-04-20 02:17:40 +0000  Associated App Clip Identifiers Filter: Skipping because "com.apple.developer.associated-appclip-app-identifiers" is not present
+2024-04-20 02:17:40 +0000  Entitlements for <IDEDistributionItem: 0x60008a1f9e60; bundleID='com.onestop.GiveAway', path='<DVTFilePath:0x600062bced80:'/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000d6743ac0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60006be81800; name='Apple Development: Piyush Kumar (F849A2YH44)', hash='878F45F8A82525E54B8F86BEFC8CE26701CF4721', serialNumber='2BB2B7D393183DEB04DF121EC6D6BCA4', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-04-03 02:57:08 +0000''>', entitlements='{
+    "application-identifier" = "Z8YFT375S3.com.onestop.GiveAway";
+    "com.apple.developer.game-center" = 1;
+    "com.apple.developer.team-identifier" = Z8YFT375S3;
+    "get-task-allow" = 1;
+}', teamID='Z8YFT375S3', identifier='com.onestop.GiveAway', executablePath='<DVTFilePath:0x600062bcfa80:'/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app/Scribble'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "Z8YFT375S3.com.onestop.GiveAway";
+    "com.apple.developer.game-center" = 1;
+    "com.apple.developer.team-identifier" = Z8YFT375S3;
+    "get-task-allow" = 1;
+}
+2024-04-20 02:17:40 +0000  Writing entitlements for <IDEDistributionItem: 0x60008a1f9e60; bundleID='com.onestop.GiveAway', path='<DVTFilePath:0x600062bced80:'/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x6000d6743ac0; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x60006be83a80; name='Apple Development: Piyush Kumar (F849A2YH44)', hash='878F45F8A82525E54B8F86BEFC8CE26701CF4721', serialNumber='2BB2B7D393183DEB04DF121EC6D6BCA4', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2024-04-03 02:57:08 +0000''>', entitlements='{
+    "application-identifier" = "Z8YFT375S3.com.onestop.GiveAway";
+    "com.apple.developer.game-center" = 1;
+    "com.apple.developer.team-identifier" = Z8YFT375S3;
+    "get-task-allow" = 1;
+}', teamID='Z8YFT375S3', identifier='com.onestop.GiveAway', executablePath='<DVTFilePath:0x600062bcfa80:'/Users/sgnco-7/Library/Developer/Xcode/Archives/2024-04-20/Scribble 20-04-24, 7.47 AM.xcarchive/Products/Applications/Scribble.app/Scribble'>', hardenedRuntime='0'>'> to: /var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/entitlements~~~t2xn6v
+2024-04-20 02:17:40 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' '878F45F8A82525E54B8F86BEFC8CE26701CF4721' '--entitlements' '/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/entitlements~~~t2xn6v' '--generate-entitlement-der' '--strip-disallowed-xattrs' '--preserve-metadata=identifier,flags,runtime' '/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root/Payload/Scribble.app'
+2024-04-20 02:17:40 +0000  /var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root/Payload/Scribble.app: replacing existing signature
+2024-04-20 02:17:40 +0000  /var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root/Payload/Scribble.app: signed app bundle with Mach-O thin (arm64) [com.onestop.GiveAway]
+2024-04-20 02:17:40 +0000  /usr/bin/codesign exited with 0
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionZipODRItemStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCreateIPAStep
+2024-04-20 02:17:40 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root' '/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Packages/Scribble.ipa'
+2024-04-20 02:17:40 +0000  >>> Copying /var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root 
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/_CodeSignature/CodeResources ... 
+2024-04-20 02:17:40 +0000  7079 bytes for ./Payload/Scribble.app/_CodeSignature/CodeResources
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Scribble ... 
+2024-04-20 02:17:40 +0000  2340144 bytes for ./Payload/Scribble.app/Scribble
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/GoogleService-Info.plist ... 
+472 bytes for ./Payload/Scribble.app/GoogleService-Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/GameViewController.nib ... 
+2024-04-20 02:17:40 +0000  1158 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/GameViewController.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/GameOverViewController.nib ... 
+2024-04-20 02:17:40 +0000  1447 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/GameOverViewController.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/P23-tE-j8Y-view-8tg-fw-onl.nib ... 
+2024-04-20 02:17:40 +0000  2431 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/P23-tE-j8Y-view-8tg-fw-onl.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/A1U-ap-dhM-view-BDg-hB-8ps.nib ... 
+2024-04-20 02:17:40 +0000  8088 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/A1U-ap-dhM-view-BDg-hB-8ps.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/NavigationHome.nib ... 
+2024-04-20 02:17:40 +0000  2295 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/NavigationHome.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/SplashVC.nib ... 
+2024-04-20 02:17:40 +0000  1137 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/SplashVC.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/b4J-6O-A52-view-jbt-lh-fB5.nib ... 
+2024-04-20 02:17:40 +0000  7058 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/b4J-6O-A52-view-jbt-lh-fB5.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/MenuViewController.nib ... 
+2024-04-20 02:17:40 +0000  1576 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/MenuViewController.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/ZXG-VX-XGh-view-0Sp-Q2-2Em.nib ... 
+2024-04-20 02:17:40 +0000  14728 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/ZXG-VX-XGh-view-0Sp-Q2-2Em.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/Main.storyboardc/Info.plist ... 
+381 bytes for ./Payload/Scribble.app/Base.lproj/Main.storyboardc/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib ... 
+2024-04-20 02:17:40 +0000  1225 bytes for ./Payload/Scribble.app/Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib ... 
+2024-04-20 02:17:40 +0000  924 bytes for ./Payload/Scribble.app/Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib
+copying file ./Payload/Scribble.app/Base.lproj/LaunchScreen.storyboardc/Info.plist ... 
+2024-04-20 02:17:40 +0000  258 bytes for ./Payload/Scribble.app/Base.lproj/LaunchScreen.storyboardc/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Animation.json ... 
+2024-04-20 02:17:40 +0000  127345 bytes for ./Payload/Scribble.app/Animation.json
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Lottie_Lottie.bundle/PrivacyInfo.xcprivacy ... 
+2024-04-20 02:17:40 +0000  599 bytes for ./Payload/Scribble.app/Lottie_Lottie.bundle/PrivacyInfo.xcprivacy
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Lottie_Lottie.bundle/Info.plist ... 
+2024-04-20 02:17:40 +0000  671 bytes for ./Payload/Scribble.app/Lottie_Lottie.bundle/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Assets.car ... 
+2024-04-20 02:17:40 +0000  504207 bytes for ./Payload/Scribble.app/Assets.car
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/embedded.mobileprovision ... 
+2024-04-20 02:17:40 +0000  30781 bytes for ./Payload/Scribble.app/embedded.mobileprovision
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/Info.plist ... 
+2024-04-20 02:17:40 +0000  1512 bytes for ./Payload/Scribble.app/Info.plist
+2024-04-20 02:17:40 +0000  copying file ./Payload/Scribble.app/PkgInfo ... 
+2024-04-20 02:17:40 +0000  8 bytes for ./Payload/Scribble.app/PkgInfo
+2024-04-20 02:17:40 +0000  /usr/bin/ditto exited with 0
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2024-04-20 02:17:40 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2024-04-20 02:17:40 +0000  IDEDistributionItem init <DVTFilePath:0x6000628a2900:'/var/folders/l8/l5snmj7j7v5_1k28kxgv3rjr0000gn/T/XcodeDistPipeline.~~~G1OyHr/Root/Payload/Scribble.app'>
+2024-04-20 02:17:40 +0000  Processing step: IDEDistributionCreateManifestStep
